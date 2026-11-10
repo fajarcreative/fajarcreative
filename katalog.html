@@ -203,13 +203,34 @@
         </div>
 
         <!-- Filter Category Badges -->
-        <div class="flex items-center gap-space-xs flex-wrap justify-center" id="catalog-category-pills">
-          <button data-cat="all" class="category-btn active px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md transition-all shadow-sm">Semua Templat (8)</button>
+        <div class="flex items-center gap-space-xs flex-wrap justify-center mb-space-lg" id="catalog-category-pills">
+          <button data-cat="all" class="category-btn active px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md transition-all shadow-sm">Semua Templat (6)</button>
           <button data-cat="undangan" class="category-btn px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-label-md transition-all">Undangan Digital</button>
           <button data-cat="umkm" class="category-btn px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-label-md transition-all">UMKM &amp; Kuliner</button>
           <button data-cat="corporate" class="category-btn px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-label-md transition-all">Profil Perusahaan</button>
           <button data-cat="toko" class="category-btn px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-label-md transition-all">Toko Online / QRIS</button>
           <button data-cat="vila" class="category-btn px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-label-md transition-all">Vila &amp; Hospitality</button>
+        </div>
+
+        <!-- Quick Interactive Sektor Direct Hub -->
+        <div class="w-full max-w-4xl p-space-md bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl border border-surface-container shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md text-left">
+          <div class="flex items-center gap-space-sm">
+            <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+            </div>
+            <div>
+              <h4 class="font-headline-sm font-bold text-on-surface text-sm">Website Katalog Interaktif Mandiri</h4>
+              <p class="font-body-sm text-on-surface-variant text-xs">Pilih sektor usaha Anda untuk membuka halaman katalog interaktif lengkap dengan demo live simulator.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap shrink-0">
+            <a href="katalog/katalog-umkm.html" class="text-xs px-3 py-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-white font-semibold transition-all">UMKM</a>
+            <a href="katalog/katalog-ecommerce-qris.html" class="text-xs px-3 py-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-white font-semibold transition-all">E-Commerce</a>
+            <a href="katalog/katalog-undangan-interaktif.html" class="text-xs px-3 py-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-white font-semibold transition-all">Undangan</a>
+            <a href="katalog/katalog-jasa-servis.html" class="text-xs px-3 py-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-white font-semibold transition-all">Jasa Servis</a>
+            <a href="katalog/katalog-profil-perusahaan.html" class="text-xs px-3 py-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-white font-semibold transition-all">Corporate B2B</a>
+            <a href="katalog/katalog-villa-hotel.html" class="text-xs px-3 py-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-white font-semibold transition-all">Villa &amp; Hotel</a>
+          </div>
         </div>
       </div>
     </section>
@@ -221,13 +242,15 @@
         <!-- Card 1: Undangan Digital -->
         <div class="catalog-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between border border-surface-container hover:-translate-y-1 transition-all" data-category="undangan">
           <div>
-            <div class="relative h-48 overflow-hidden bg-surface-dim">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNUh7SHr1OcB0wheXAtwDBLzQW1Nurbb1ht76zsvKUnkNvrtik5OLom_l9pTUN9fnUvHFNWfN7BDXIXg9jOc50MvMeAuh2aacPHIcm933aushHsSZ4QrQOup1t5M0-GmSItvc7U917KGGotSd1lottZrjanuDTChNQ6dHNE2gh7PfE0X6smzAajzgZmpUooq7V2C2t6KuftOAoCK7_qoX-cUdAnOLW4vvv8YYhafS4E0ULNHsK99o" alt="Undangan Digital Preview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            <a href="katalog/katalog-undangan-interaktif.html" class="block relative h-48 overflow-hidden bg-surface-dim group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNUh7SHr1OcB0wheXAtwDBLzQW1Nurbb1ht76zsvKUnkNvrtik5OLom_l9pTUN9fnUvHFNWfN7BDXIXg9jOc50MvMeAuh2aacPHIcm933aushHsSZ4QrQOup1t5M0-GmSItvc7U917KGGotSd1lottZrjanuDTChNQ6dHNE2gh7PfE0X6smzAajzgZmpUooq7V2C2t6KuftOAoCK7_qoX-cUdAnOLW4vvv8YYhafS4E0ULNHsK99o" alt="Undangan Digital Preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
               <span class="absolute top-3 left-3 bg-primary text-on-primary font-label-sm px-3 py-1 rounded-full font-bold shadow-md">Undangan &amp; Bio Link</span>
               <span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur font-headline-sm text-primary px-3 py-1 rounded-lg font-bold">Rp 99.000</span>
-            </div>
+            </a>
             <div class="p-space-lg">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Undangan Pernikahan &amp; Event Komunitas</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs hover:text-primary transition-colors">
+                <a href="katalog/katalog-undangan-interaktif.html">Undangan Pernikahan &amp; Event Komunitas</a>
+              </h3>
               <p class="font-body-sm text-on-surface-variant mb-space-md">
                 Tampilan mobile-first yang romantis &amp; modern. Lengkap dengan hitung mundur acara, lokasi peta Google Maps, galeri kenangan, &amp; RSVP direct WhatsApp.
               </p>
@@ -239,9 +262,13 @@
             </div>
           </div>
           <div class="p-space-lg pt-0 flex gap-space-xs">
-            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20ingin%20pesan%20Templat%20Undangan%20Digital%2099RB" target="_blank" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg py-space-sm rounded-full shadow-md transition-colors">
+            <a href="katalog/katalog-undangan-interaktif.html" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg py-space-sm rounded-full shadow-md transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+              <span>Buka Katalog</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20ingin%20pesan%20Templat%20Undangan%20Digital%2099RB" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg px-space-md py-space-sm rounded-full shadow-md transition-all active:scale-95">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Pesan 99RB</span>
+              <span>Pesan</span>
             </a>
           </div>
         </div>
@@ -249,13 +276,15 @@
         <!-- Card 2: Landing Page UMKM Kuliner -->
         <div class="catalog-card bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col justify-between border-2 border-secondary/40 hover:-translate-y-1 transition-all" data-category="umkm">
           <div>
-            <div class="relative h-48 overflow-hidden bg-surface-dim">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbVqZGww0gidzGwmfyVeFyAhgKLrrX8C1odb8ppJBowScm6sYc6490dKUzOhEaex0Y5wkGMaH4WbMZqGNTkFM2spQzCUXfnph7wGND_V5Jh2lJnLjPunpfSYZoI9Srr8CD5J9dhHnoThjW2hRLFZ03fqJV6DJW2sldXxQOw5V27cjIdCmyQ-MnPuTnUX3-33T8-Adlecadc5VRgkgDWL3xC8wQ0lpazbDWzfasFzu35wzncbw17Yc" alt="UMKM Kuliner Preview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            <a href="katalog/katalog-umkm.html" class="block relative h-48 overflow-hidden bg-surface-dim group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbVqZGww0gidzGwmfyVeFyAhgKLrrX8C1odb8ppJBowScm6sYc6490dKUzOhEaex0Y5wkGMaH4WbMZqGNTkFM2spQzCUXfnph7wGND_V5Jh2lJnLjPunpfSYZoI9Srr8CD5J9dhHnoThjW2hRLFZ03fqJV6DJW2sldXxQOw5V27cjIdCmyQ-MnPuTnUX3-33T8-Adlecadc5VRgkgDWL3xC8wQ0lpazbDWzfasFzu35wzncbw17Yc" alt="UMKM Kuliner Preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
               <span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm px-3 py-1 rounded-full font-bold shadow-md">UMKM Kuliner &amp; F&amp;B</span>
               <span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur font-headline-sm text-secondary px-3 py-1 rounded-lg font-bold">Rp 299.000</span>
-            </div>
+            </a>
             <div class="p-space-lg">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Landing Page Kedai Kopi, Boba &amp; Resto</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs hover:text-secondary transition-colors">
+                <a href="katalog/katalog-umkm.html">Landing Page Kedai Kopi, Boba &amp; Resto</a>
+              </h3>
               <p class="font-body-sm text-on-surface-variant mb-space-md">
                 Struktur penjualan konversi tinggi. Tampilkan menu unggulan, promo harian, lokasi cabang, &amp; tombol pesan antar via WA.
               </p>
@@ -267,9 +296,13 @@
             </div>
           </div>
           <div class="p-space-lg pt-0 flex gap-space-xs">
-            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Kuliner%20299RB" target="_blank" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg py-space-sm rounded-full shadow-md transition-colors">
+            <a href="katalog/katalog-umkm.html" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg py-space-sm rounded-full shadow-md transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+              <span>Buka Katalog</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20ingin%20order%20Landing%20Page%20UMKM%20Kuliner%20299RB" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg px-space-md py-space-sm rounded-full shadow-md transition-all active:scale-95">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Pilih Templat 299RB</span>
+              <span>Pesan</span>
             </a>
           </div>
         </div>
@@ -277,13 +310,15 @@
         <!-- Card 3: Landing Page Jasa Laundry -->
         <div class="catalog-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between border border-surface-container hover:-translate-y-1 transition-all" data-category="umkm">
           <div>
-            <div class="relative h-48 overflow-hidden bg-surface-dim">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDye86t96jFQYhM6zH7_qRmgnFw_yHwJScBwcsbboPc-WbebWHQ0SE2G4hUX-lk1QSYiBNmBT0w7cVlM4PqAtL9cxQBg2E0CebECqKqCNe5U0sMU_gZocbujg9Q_62Z72iTbHJNFjJ_NztDH_geo3Tgq8PJQMvJoU54cXlcJ02Ka8dlUEnATWmwRzUOglq5K4U1937xfPTB7GFx4ewLseRhZjjX5DnhdXzrdacVuY0jrMJUelsGdTo" alt="Laundry & Service Preview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            <a href="katalog/katalog-jasa-servis.html" class="block relative h-48 overflow-hidden bg-surface-dim group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDye86t96jFQYhM6zH7_qRmgnFw_yHwJScBwcsbboPc-WbebWHQ0SE2G4hUX-lk1QSYiBNmBT0w7cVlM4PqAtL9cxQBg2E0CebECqKqCNe5U0sMU_gZocbujg9Q_62Z72iTbHJNFjJ_NztDH_geo3Tgq8PJQMvJoU54cXlcJ02Ka8dlUEnATWmwRzUOglq5K4U1937xfPTB7GFx4ewLseRhZjjX5DnhdXzrdacVuY0jrMJUelsGdTo" alt="Laundry & Service Preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
               <span class="absolute top-3 left-3 bg-primary text-on-primary font-label-sm px-3 py-1 rounded-full font-bold shadow-md">Jasa &amp; Service</span>
               <span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur font-headline-sm text-primary px-3 py-1 rounded-lg font-bold">Rp 299.000</span>
-            </div>
+            </a>
             <div class="p-space-lg">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Landing Page Laundry, Salon &amp; AC Service</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs hover:text-primary transition-colors">
+                <a href="katalog/katalog-jasa-servis.html">Landing Page Laundry, Salon &amp; AC Service</a>
+              </h3>
               <p class="font-body-sm text-on-surface-variant mb-space-md">
                 Solusi praktis untuk penyedia jasa lokal. Tampilkan daftar paket harga kiloan/satuan, area jangkauan jemput, &amp; testimonial.
               </p>
@@ -295,9 +330,13 @@
             </div>
           </div>
           <div class="p-space-lg pt-0 flex gap-space-xs">
-            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Laundry%20Service%20299RB" target="_blank" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg py-space-sm rounded-full shadow-md transition-colors">
+            <a href="katalog/katalog-jasa-servis.html" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg py-space-sm rounded-full shadow-md transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+              <span>Buka Katalog</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Laundry%20Service%20299RB" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg px-space-md py-space-sm rounded-full shadow-md transition-all active:scale-95">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Pesan Templat 299RB</span>
+              <span>Pesan</span>
             </a>
           </div>
         </div>
@@ -305,13 +344,15 @@
         <!-- Card 4: Website Profil Perusahaan -->
         <div class="catalog-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between border border-surface-container hover:-translate-y-1 transition-all" data-category="corporate">
           <div>
-            <div class="relative h-48 overflow-hidden bg-surface-dim">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzuG4IFrzsbROZoVApecHYUhjAWKbxduG9kNrCZquJN0b_e81fIncmtg-Ljo66hQMvfjAMz5F93tCCFv1ErDbVY_xsZj4SbjOp6VZbD92ON5Bvz9zrWzqbP_ZiYtAoKvAOEHCQsCyYCiDn_sdHOM0btAiWx386Oy5akqgZtVnWVPImTJ29dRgx2qb9-Xt9pbMbsZbpjlPxHXQ62Kzf-2DY6zYZRkpbO0ZuEOfznAwSboxLSw-SdPI" alt="Company Profile Preview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            <a href="katalog/katalog-profil-perusahaan.html" class="block relative h-48 overflow-hidden bg-surface-dim group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzuG4IFrzsbROZoVApecHYUhjAWKbxduG9kNrCZquJN0b_e81fIncmtg-Ljo66hQMvfjAMz5F93tCCFv1ErDbVY_xsZj4SbjOp6VZbD92ON5Bvz9zrWzqbP_ZiYtAoKvAOEHCQsCyYCiDn_sdHOM0btAiWx386Oy5akqgZtVnWVPImTJ29dRgx2qb9-Xt9pbMbsZbpjlPxHXQ62Kzf-2DY6zYZRkpbO0ZuEOfznAwSboxLSw-SdPI" alt="Company Profile Preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
               <span class="absolute top-3 left-3 bg-primary text-on-primary font-label-sm px-3 py-1 rounded-full font-bold shadow-md">Profil Perusahaan</span>
               <span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur font-headline-sm text-primary px-3 py-1 rounded-lg font-bold">Rp 599.000</span>
-            </div>
+            </a>
             <div class="p-space-lg">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Company Profile PT/CV &amp; Kontraktor</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs hover:text-primary transition-colors">
+                <a href="katalog/katalog-profil-perusahaan.html">Company Profile PT/CV &amp; Kontraktor</a>
+              </h3>
               <p class="font-body-sm text-on-surface-variant mb-space-md">
                 Website multi-halaman berstandar agensi. Memuat profil perusahaan, visi-misi, daftar proyek/portofolio, susunan tim, &amp; legalitas.
               </p>
@@ -323,9 +364,13 @@
             </div>
           </div>
           <div class="p-space-lg pt-0 flex gap-space-xs">
-            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Company%20Profile%20599RB" target="_blank" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg py-space-sm rounded-full shadow-md transition-colors">
+            <a href="katalog/katalog-profil-perusahaan.html" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg py-space-sm rounded-full shadow-md transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+              <span>Buka Katalog</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Company%20Profile%20599RB" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg px-space-md py-space-sm rounded-full shadow-md transition-all active:scale-95">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Pilih Profil Perusahaan</span>
+              <span>Pesan</span>
             </a>
           </div>
         </div>
@@ -333,13 +378,15 @@
         <!-- Card 5: Website Vila & Homestay -->
         <div class="catalog-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between border border-surface-container hover:-translate-y-1 transition-all" data-category="vila">
           <div>
-            <div class="relative h-48 overflow-hidden bg-surface-dim">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZt_kkVXTQbPWrG3YBIfDinqgPFgAqEq1AVKUkc6m0HjeSTwHH-0F19YED-AlYqPWVX0ZgUWduwdYSKq956Ow0wbu38saZ4IOuhwa20u9UNxm6FSfah7s0d94ATz3SR-SKL-eaew9CeX483QM5SbTACUJi7eKPqZLcszY4QFcgoneyILybKfKezWBNV8QbTPpeARe84S-dYl9fxVVy8GKWRabzaFEIY5prP3gRKcUcXFDgRwptVAY" alt="Vila & Hospitality Preview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            <a href="katalog/katalog-villa-hotel.html" class="block relative h-48 overflow-hidden bg-surface-dim group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZt_kkVXTQbPWrG3YBIfDinqgPFgAqEq1AVKUkc6m0HjeSTwHH-0F19YED-AlYqPWVX0ZgUWduwdYSKq956Ow0wbu38saZ4IOuhwa20u9UNxm6FSfah7s0d94ATz3SR-SKL-eaew9CeX483QM5SbTACUJi7eKPqZLcszY4QFcgoneyILybKfKezWBNV8QbTPpeARe84S-dYl9fxVVy8GKWRabzaFEIY5prP3gRKcUcXFDgRwptVAY" alt="Vila & Hospitality Preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
               <span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm px-3 py-1 rounded-full font-bold shadow-md">Vila &amp; Hospitality</span>
               <span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur font-headline-sm text-secondary px-3 py-1 rounded-lg font-bold">Rp 450.000</span>
-            </div>
+            </a>
             <div class="p-space-lg">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Website Vila, Homestay &amp; Kost Eksklusif</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs hover:text-secondary transition-colors">
+                <a href="katalog/katalog-villa-hotel.html">Website Vila, Homestay &amp; Kost Eksklusif</a>
+              </h3>
               <p class="font-body-sm text-on-surface-variant mb-space-md">
                 Tampilkan keindahan arsitektur vila, galeri foto kamar, daftar fasilitas, lokasi sekitar wisata, &amp; sistem cek ketersediaan via WA.
               </p>
@@ -351,9 +398,13 @@
             </div>
           </div>
           <div class="p-space-lg pt-0 flex gap-space-xs">
-            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Website%20Vila%20450RB" target="_blank" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg py-space-sm rounded-full shadow-md transition-colors">
+            <a href="katalog/katalog-villa-hotel.html" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg py-space-sm rounded-full shadow-md transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+              <span>Buka Katalog</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20order%20Templat%20Website%20Vila%20450RB" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg px-space-md py-space-sm rounded-full shadow-md transition-all active:scale-95">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Pilih Templat Vila</span>
+              <span>Pesan</span>
             </a>
           </div>
         </div>
@@ -361,13 +412,15 @@
         <!-- Card 6: Toko Online E-Commerce -->
         <div class="catalog-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between border border-surface-container hover:-translate-y-1 transition-all" data-category="toko">
           <div>
-            <div class="relative h-48 overflow-hidden bg-surface-dim">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuTEyivBAgfBtxleNLJR0NwjQaVw44uNo9CUWc5h7kHt3-VzpCGxx5tJZ2Fe5txRRo2YlzljOKMxzWtGnp1AGBB8cr5HxMF09Av-LmAVnOngIfYnBOYSk0cbNN-iKLoNaEvP_snZKBrC50cEFjRnus6CNOS0RAEq35WMiIPr5JBYJNeOwLS7gdrYxEDyoGk-DFZ_kbCRLtoPw-heIDq55Jq9SQZOOHUjDdSx8ty5YzsUNL4PCPm4Q" alt="E-Commerce Preview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            <a href="katalog/katalog-ecommerce-qris.html" class="block relative h-48 overflow-hidden bg-surface-dim group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuTEyivBAgfBtxleNLJR0NwjQaVw44uNo9CUWc5h7kHt3-VzpCGxx5tJZ2Fe5txRRo2YlzljOKMxzWtGnp1AGBB8cr5HxMF09Av-LmAVnOngIfYnBOYSk0cbNN-iKLoNaEvP_snZKBrC50cEFjRnus6CNOS0RAEq35WMiIPr5JBYJNeOwLS7gdrYxEDyoGk-DFZ_kbCRLtoPw-heIDq55Jq9SQZOOHUjDdSx8ty5YzsUNL4PCPm4Q" alt="E-Commerce Preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
               <span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-sm px-3 py-1 rounded-full font-bold shadow-md">E-Commerce &amp; QRIS</span>
               <span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur font-headline-sm text-tertiary px-3 py-1 rounded-lg font-bold">Rp 1.250.000</span>
-            </div>
+            </a>
             <div class="p-space-lg">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Toko Online Keranjang Belanja &amp; Ongkir Otomatis</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs hover:text-tertiary transition-colors">
+                <a href="katalog/katalog-ecommerce-qris.html">Toko Online Keranjang Belanja &amp; Ongkir Otomatis</a>
+              </h3>
               <p class="font-body-sm text-on-surface-variant mb-space-md">
                 Platform e-commerce lengkap dengan katalog produk tanpa batas, hitung ongkir JNE/J&amp;T otomatis, &amp; opsi integrasi QRIS / VA.
               </p>
@@ -379,9 +432,13 @@
             </div>
           </div>
           <div class="p-space-lg pt-0 flex gap-space-xs">
-            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20konsultasi%20Toko%20Online%20E-Commerce" target="_blank" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg py-space-sm rounded-full shadow-md transition-colors">
+            <a href="katalog/katalog-ecommerce-qris.html" class="flex-1 inline-flex items-center justify-center gap-space-xs bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg py-space-sm rounded-full shadow-md transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+              <span>Buka Katalog</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Mas%20Fajar,%20saya%20mau%20konsultasi%20Toko%20Online%20E-Commerce" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg px-space-md py-space-sm rounded-full shadow-md transition-all active:scale-95">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Konsultasi Toko Online</span>
+              <span>Pesan</span>
             </a>
           </div>
         </div>

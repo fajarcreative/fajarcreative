@@ -1,0 +1,992 @@
+<!DOCTYPE html><html lang="id" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Website UMKM — Fajar Creative | Solusi Go Digital Cepat &amp; Profesional</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#C59B27',
+        'on-accent': '#383838',
+        'accent-container': '#FDF4DE',
+        'on-accent-container': '#574100',
+        'success': '#1F7A4D',
+        'on-success': '#FFFFFF',
+        'light-primary': '#143D30',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#D1EADB',
+        'light-on-primary-container': '#042118',
+        'light-surface': '#FDFCF7',
+        'light-on-surface': '#1C1F1E',
+        'light-surface-container-low': '#F7F5EE',
+        'light-surface-container': '#EFECE2',
+        'light-surface-container-high': '#E7E4D8',
+        'light-outline': '#737A75',
+        'light-outline-variant': '#C2C8C3',
+        'dark-primary': '#94D5BE',
+        'dark-on-primary': '#003829',
+        'dark-primary-container': '#0E513F',
+        'dark-on-primary-container': '#B0F2DA',
+        'dark-surface': '#111413',
+        'dark-on-surface': '#E1E3DF',
+        'dark-surface-container-low': '#191C1B',
+        'dark-surface-container': '#1F2321',
+        'dark-surface-container-high': '#292E2B',
+        'dark-outline': '#8D938E',
+        'dark-outline-variant': '#424844',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-gap': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Cinzel"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'body': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'label': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '60px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-xl': ['40px', { lineHeight: '48px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-xl-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.3px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '300ms',
+        'filter-switch': '200ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'filter-switch': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        'surface-enter': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'filter-switch': 'ease-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased min-h-[1024px] selection:bg-accent-container selection:text-on-accent-container" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- TOP PROMO BAR -->
+  <div class="bg-light-primary text-light-on-primary py-2.5 px-4 text-center text-label-sm font-label flex items-center justify-center gap-2 border-b border-light-primary-container/20">
+    <span class="material-symbols-outlined text-[16px] text-accent">rocket_launch</span>
+    <span>Program UMKM Naik Kelas 2026: Website Instan Siap Pakai 1 Hari Jadi Mulai Rp 199.000 + Free Domain &amp; WhatsApp Order!</span>
+    <a href="#katalog-bisnis" class="underline underline-offset-2 ml-1.5 font-bold hover:text-accent transition-colors">Pilih Template</a>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-50 bg-light-surface/95 backdrop-blur-md border-b border-light-outline-variant/40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- BRAND LOGO -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center font-display font-bold text-lg group-hover:bg-accent group-hover:text-on-accent transition-colors shadow-sm">
+          FC
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-xl tracking-tight text-light-primary">FAJAR CREATIVE</span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-light-outline">Katalog Website UMKM &amp; Bisnis Lokal</span>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="hidden lg:flex items-center gap-7">
+        <a href="#katalog-bisnis" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Katalog Template</a>
+        <a href="#showcase-binaan" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Showcase UMKM</a>
+        <a href="#fitur-wajib" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Fitur Go-Digital</a>
+        <a href="#kalkulator-paket" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Paket &amp; Harga</a>
+        <a href="#cara-kerja" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Alur Pembuatan</a>
+      </nav>
+
+      <!-- HEADER CTA ACTIONS -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20konsultasi%20website%20untuk%20usaha%20UMKM%20saya" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-light-outline-variant text-light-primary font-label text-label-md hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[18px] text-success">chat</span>
+          <span>Konsultasi Bisnis</span>
+        </a>
+        <a href="#katalog-bisnis" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md hover:opacity-95 shadow-sm active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-[18px]">storefront</span>
+          <span>Pilih Template</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH MULTI-DEVICE MOCKUP -->
+  <section class="relative overflow-hidden pt-12 pb-20 md:pt-16 md:pb-28 border-b border-light-outline-variant/30 bg-gradient-to-b from-light-surface via-light-surface-container-low/50 to-light-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- HERO COPYWRITING -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-sm font-semibold w-fit">
+            <span class="material-symbols-outlined text-[16px] text-light-primary">verified</span>
+            <span>Solusi Website Praktis &amp; Terjangkau untuk 10.000+ UMKM Indonesia</span>
+          </div>
+
+          <h1 class="font-display text-display-lg-mobile md:text-display-lg text-light-primary tracking-tight leading-tight">
+            Katalog Website UMKM: Toko Online &amp; Profil Usaha Siap Tayang
+          </h1>
+
+          <p class="font-body text-body-lg text-light-outline text-pretty">
+            Tingkatkan omzet dan kepercayaan pelanggan dengan website profesional tanpa repot coding. Tersedia ratusan desain siap pakai untuk <strong>Kuliner &amp; Cafe, Fashion &amp; Craft, Jasa Servis, hingga Minimarket Retail</strong>. Dilengkapi sistem order langsung ke WhatsApp, Google Maps, dan katalog produk instan.
+          </p>
+
+          <!-- SECTOR BADGES -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-3 py-1 rounded-full bg-light-surface-container text-light-primary text-label-sm font-label border border-light-outline-variant/40 flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">coffee</span> Kafe &amp; F&amp;B
+            </span>
+            <span class="px-3 py-1 rounded-full bg-light-surface-container text-light-primary text-label-sm font-label border border-light-outline-variant/40 flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">apparel</span> Fashion &amp; Kriya
+            </span>
+            <span class="px-3 py-1 rounded-full bg-light-surface-container text-light-primary text-label-sm font-label border border-light-outline-variant/40 flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">home_repair_service</span> Jasa &amp; Bengkel
+            </span>
+            <span class="px-3 py-1 rounded-full bg-light-surface-container text-light-primary text-label-sm font-label border border-light-outline-variant/40 flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">shopping_bag</span> Retail &amp; Frozen Food
+            </span>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div class="flex flex-wrap items-center gap-4 pt-3">
+            <a href="#katalog-bisnis" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all">
+              <span class="material-symbols-outlined text-[20px]">grid_view</span>
+              <span>Jelajahi Template Bisnis</span>
+            </a>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20ingin%20konsultasi%20website%20UMKM%20gratis" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-light-outline-variant bg-light-surface text-light-primary font-label text-label-lg hover:bg-light-surface-container transition-all">
+              <span class="material-symbols-outlined text-[20px] text-success">chat</span>
+              <span>Tanya Desainer Kami</span>
+            </a>
+          </div>
+
+          <!-- VALUE PROPS SUMMARY -->
+          <div class="pt-4 grid grid-cols-3 gap-4 border-t border-light-outline-variant/30 text-center sm:text-left">
+            <div>
+              <p class="font-display font-bold text-2xl text-light-primary">1 Hari Jadi</p>
+              <p class="text-[12px] text-light-outline">Langsung online siap jualan</p>
+            </div>
+            <div>
+              <p class="font-display font-bold text-2xl text-light-primary">Gratis Domain</p>
+              <p class="text-[12px] text-light-outline">Subdomain atau .com pilihan</p>
+            </div>
+            <div>
+              <p class="font-display font-bold text-2xl text-accent">Order WA</p>
+              <p class="text-[12px] text-light-outline">Format nota pesanan rapi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO SHOWCASE GRAPHIC -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-light-surface-container bg-light-surface-container">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAidjsZF2uFVElB9BZw6s3zbOgfDmb7eiZm2ea8BzIXEQqm8_k1f9EbKpzPqbc_FPKTMLVmY1JOeuRityLHMNKu26B2nrjSTCviSoMLI-P_SfjB45Fb4eSDc-sJdMiM0wrTMjI_CQ3JFdjySsc_meirjaBa00G9hn5JSrnGnBsOWtUxsoynuRyxGfzZQ0AYX3-c7KApFuh6H4FrAGC6YBHHhINu1v5Em9in0n_HBENyanKFwoNeu0Jd9IB2" alt="Showcase Multi-Device Website UMKM Fajar Creative" class="w-full h-auto object-cover hover:scale-102 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 right-4 bg-light-surface/90 backdrop-blur-md p-4 rounded-2xl border border-light-outline-variant/40 shadow-lg flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-label font-bold uppercase tracking-wider text-accent">Preview Responsif</span>
+                <p class="font-headline font-bold text-sm text-light-primary">Tampil Sempurna di HP, Tablet &amp; Laptop Pelanggan</p>
+              </div>
+              <a href="#katalog-bisnis" class="px-3.5 py-1.5 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+                Lihat Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS & IMPACT BAR -->
+  <section class="bg-light-surface-container-low py-10 border-b border-light-outline-variant/40">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl md:text-4xl text-light-primary">850+</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Pelaku Usaha UMKM Mengudara</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl md:text-4xl text-light-primary">3.2x</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Kenaikan Kepercayaan Pembeli Baru</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl md:text-4xl text-light-primary">100%</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Milik Penuh &amp; Akses Edit Mandiri</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl md:text-4xl text-accent">0% Biaya</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Bebas Potongan Komisi Penjualan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG TEMPLATE BISNIS SECTION -->
+  <section id="katalog-bisnis" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Katalog Template Siap Pakai</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Pilih Desain Website yang Paling Cocok untuk Usahamu
+      </h2>
+      <p class="font-body text-body-md text-light-outline mt-3">
+        Semua template sudah dirancang optimal untuk konversi penjualan, ramah SEO Google, dan terintegrasi tombol checkout WhatsApp otomatis.
+      </p>
+
+      <!-- SECTOR FILTER TABS -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-2">
+        <button class="px-5 py-2.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md shadow-sm">
+          Semua Sektor (68)
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Kuliner &amp; Coffee Shop
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Fashion &amp; Kriya Lokal
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Jasa &amp; Servis Profesional
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Retail &amp; Toko Kelontong Modern
+        </button>
+      </div>
+    </div>
+
+    <!-- CATALOG ITEMS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- ITEM 1: KULINER & COFFEE SHOP -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrBkBrNwf74ggL4nmZpMCCyYmnZWEGbBE50JoIzPOUEM43YR1by4V9feszpwS2eGpq5A5RYen5aGEx5HvxBt0puairKky4Uvu50FDCtbHaZoVFZMsezWLnoxclmJs9-DIVtUf4BxufBobSf65Zw38yr-5-avgIiHzvIjpx6JF0LadzCZi2ollqo6dU2O5lOyKKaFiY7TyfbKVCEVrHBcIq5_8o6oExIJ7WSuqi2ZMENNFQ-YAV9Y0RyuIOysC_Q" alt="Template Kopi &amp; Artisan Bakery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Kuliner &amp; Cafe</span>
+          <span class="absolute top-3 right-3 bg-accent text-on-accent px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Best Seller</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-FNB01</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (310+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Artisan Bistro &amp; Cafe</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Menu digital QR code meja, reservasi tempat duduk online, katalog varian kopi/makanan, dan tombol order WhatsApp.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Menu QR Meja</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Order Takeaway</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 399.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 249.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Artisan%20Bistro%20FC-FNB01" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Ini</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 2: FASHION & CRAFT BOUTIQUE -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCUH3Fn28uhsK7kL4X_F9w5Xcin77FgrV2EKGPRMSFqQh0GLXokb9_oeWC4LVKYALMsYarNZhoblH2FuLK1zsiN2m4AlFKeVVICh-ty0O-W1QsMHYqzmSSqLXiquBlFEvNZrqxcccJSPBcCXlHqEBn6HazgS9XAnoqVEJF29KbJi62p4ZhEn4VPkDwCf2mSnZaQuWkW9ababGT54gt4nAQ9T5AvH-Rh8o8WcaKLjPwDzU494vvJfEk_9wxnLA" alt="Template Fashion Boutique &amp; Batik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Fashion &amp; Kriya</span>
+          <span class="absolute top-3 right-3 bg-light-primary text-light-on-primary px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Trending</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-FAS03</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (240+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Nusantara Atelier</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Desain katalog katalog busana mewah, panduan ukuran baju (size chart), filter warna &amp; bahan, serta tombol cek ongkir.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Size Chart</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Katalog Lookbook</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 450.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 279.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Nusantara%20Atelier%20FC-FAS03" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Ini</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 3: JASA & SERVIS PROFESIONAL -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAJ70ajQ8LXD6WKcD0fmbF-tmKpDjwLN6EMaBn--zZM3QwvqGXQsSxfNMwdB2e_nt8H6V8L4Zf4gllnMP60wlWDUIkdZ3Bj6oCHUq3ijxqil4G6wChQsNaQmxDK9pCr8lSN4vm5UKqz5I_EX4mRlokNK7b1GzsM9boNy4RdrxqqdvOCYUrgNY_4dp0be5jmdDjye0PnMIQXVs6H7gIrqv1913pAPcC8eoHZUxOGrnI5Dp7qD_h1BmFBMgBnsNlC" alt="Template Jasa Servis &amp; Cuci Sepatu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Jasa &amp; Servis</span>
+          <span class="absolute top-3 right-3 bg-light-primary-container text-light-on-primary-container px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Populer</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-SRV02</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.8 (190+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Prime Clean &amp; Care</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Untuk jasa laundry, salon perawatan, servis AC/elektronik, atau rental kendaraan. Formulir booking jadwal otomatis.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Booking Jadwal</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Daftar Paket</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 350.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 219.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Prime%20Clean%20FC-SRV02" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Ini</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 4: RETAIL & FROZEN FOOD -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrBwucSQK33V7qjmitE1M59lbQZDiWWBZP9C4fldH1ShbWXPkUNNJ1RdtnCUVrXvVBwNImxdVJFVIN8boB0vKlaYVyxnZv5dsJZIp3SHDBjqw93xcmEJO0DTrPbMFVP41e4MJckC5CCtDgBdmEG48dVasNLPK58jkpQfhB1wcKQuuc92NrutKhJeuiUrjt_NmV6buFVZzQwvhWGNJfJM3BIZEzRiO5a0HweRYrAxySDM5nUlx4YOgPhI0SvqPB8" alt="Template Retail &amp; Toko Buah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Retail &amp; Groceries</span>
+          <span class="absolute top-3 right-3 bg-accent-container text-on-accent-container px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Praktis</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-RET04</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (170+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Segar Mart &amp; Frozen</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Katalog belanja cepat, tombol keranjang mini multi-produk, hitung total belanja otomatis, dan integrasi kurir instan lokal.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Keranjang Mini</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Stok Real-time</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 380.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 239.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Segar%20Mart%20FC-RET04" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Ini</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SHOWCASE DIREKTORI BISNIS UMKM BINAAN -->
+  <section id="showcase-binaan" class="py-20 bg-light-surface-container-low border-y border-light-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Direktori Bisnis</span>
+          <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+            Kisah Sukses &amp; Showcase UMKM Go-Digital
+          </h2>
+          <p class="font-body text-body-md text-light-outline mt-2 max-w-xl">
+            Lihat langsung website UMKM asli karya Fajar Creative yang saat ini aktif menghasilkan pesanan setiap hari.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-body-sm text-light-outline font-label">Filter Kota:</span>
+          <span class="px-3 py-1.5 rounded-full bg-light-surface border border-light-outline-variant text-label-sm font-label text-light-primary">Jabodetabek</span>
+          <span class="px-3 py-1.5 rounded-full bg-light-surface border border-light-outline-variant text-label-sm font-label text-light-primary">Surabaya</span>
+          <span class="px-3 py-1.5 rounded-full bg-light-surface border border-light-outline-variant text-label-sm font-label text-light-primary">Bandung</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- SHOWCASE 1 -->
+        <div class="p-6 rounded-3xl bg-light-surface border border-light-outline-variant/40 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-accent-container text-on-accent-container text-label-sm font-label font-bold">Kedai Kopi Lokal</span>
+              <span class="text-xs text-light-outline">Online sejak Jan 2025</span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary">Kopi Senja Bahagia — Malang</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">
+              &#34;Setelah punya website profil dari Fajar Creative, pengunjung luar kota mudah nemu alamat via Google Maps dan pemesanan biji kopi roasted melonjak 180% lewat WhatsApp.&#34;
+            </p>
+            <div class="mt-4 pt-4 border-t border-light-outline-variant/30 flex items-center justify-between text-xs">
+              <span class="text-light-outline">Domain: <em>kopisenjabahagia.com</em></span>
+              <span class="text-success font-semibold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-success"></span> Aktif
+              </span>
+            </div>
+          </div>
+          <div class="mt-6">
+            <a href="https://wa.me/6282338903403?text=Halo,%20saya%20mau%20bikin%20website%20seperti%20Kopi%20Senja%20Bahagia" target="_blank" rel="noopener" class="w-full py-2.5 rounded-full border border-light-primary text-light-primary font-label text-label-sm font-semibold flex items-center justify-center gap-1.5 hover:bg-light-primary hover:text-light-on-primary transition-colors">
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+              <span>Lihat Detail Studi Kasus</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- SHOWCASE 2 -->
+        <div class="p-6 rounded-3xl bg-light-surface border border-light-outline-variant/40 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-light-primary-container text-light-on-primary-container text-label-sm font-label font-bold">Kriya &amp; Tenun Ikat</span>
+              <span class="text-xs text-light-outline">Online sejak Mar 2025</span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary">Tenun Wastra Maya — Solo</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">
+              &#34;Katalog digital Fajar Creative sangat anggun untuk menampilkan kain tenun premium kami. Pembeli instansi dan ekspatriat lebih percaya belanja langsung tanpa ragu.&#34;
+            </p>
+            <div class="mt-4 pt-4 border-t border-light-outline-variant/30 flex items-center justify-between text-xs">
+              <span class="text-light-outline">Domain: <em>wastramaya.id</em></span>
+              <span class="text-success font-semibold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-success"></span> Aktif
+              </span>
+            </div>
+          </div>
+          <div class="mt-6">
+            <a href="https://wa.me/6282338903403?text=Halo,%20saya%20mau%20bikin%20website%20seperti%20Tenun%20Wastra%20Maya" target="_blank" rel="noopener" class="w-full py-2.5 rounded-full border border-light-primary text-light-primary font-label text-label-sm font-semibold flex items-center justify-center gap-1.5 hover:bg-light-primary hover:text-light-on-primary transition-colors">
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+              <span>Lihat Detail Studi Kasus</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- SHOWCASE 3 -->
+        <div class="p-6 rounded-3xl bg-light-surface border border-light-outline-variant/40 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-accent-container text-on-accent-container text-label-sm font-label font-bold">Jasa Cuci Kasur &amp; Sofa</span>
+              <span class="text-xs text-light-outline">Online sejak Mei 2025</span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary">Bintang Hydro Clean — Tangerang</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">
+              &#34;Customer tinggal pilih paket di website lalu klik booking WhatsApp. Tim CS kami tidak perlu bolak-balik jelaskan daftar harga lagi karena semua sudah transparan di web.&#34;
+            </p>
+            <div class="mt-4 pt-4 border-t border-light-outline-variant/30 flex items-center justify-between text-xs">
+              <span class="text-light-outline">Domain: <em>bintangclean.com</em></span>
+              <span class="text-success font-semibold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-success"></span> Aktif
+              </span>
+            </div>
+          </div>
+          <div class="mt-6">
+            <a href="https://wa.me/6282338903403?text=Halo,%20saya%20mau%20bikin%20website%20seperti%20Bintang%20Hydro%20Clean" target="_blank" rel="noopener" class="w-full py-2.5 rounded-full border border-light-primary text-light-primary font-label text-label-sm font-semibold flex items-center justify-center gap-1.5 hover:bg-light-primary hover:text-light-on-primary transition-colors">
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+              <span>Lihat Detail Studi Kasus</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR WAJIB WEBSITE UMKM -->
+  <section id="fitur-wajib" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Dirancang untuk Penjualan</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Fitur Komplit yang Langsung Mendukung Bisnis UMKM
+      </h2>
+      <p class="font-body text-body-md text-light-outline mt-3">
+        Bukan hanya indah dipandang, website UMKM Fajar Creative dilengkapi fondasi teknis yang memudahkan transaksi dan ditemukan calon pembeli.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- FITUR 1 -->
+      <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+        <div class="w-12 h-12 rounded-xl bg-success text-on-success flex items-center justify-center mb-6 shadow-sm">
+          <span class="material-symbols-outlined text-[26px]">chat</span>
+        </div>
+        <h3 class="font-headline text-headline-md text-light-primary mb-2">Checkout WhatsApp Otomatis</h3>
+        <p class="font-body text-body-sm text-light-outline">
+          Saat pelanggan memilih produk, data pesanan (nama barang, jumlah, harga, dan alamat kirim) langsung terformat rapi dan terkirim ke nomor WhatsApp admin usahamu.
+        </p>
+      </div>
+
+      <!-- FITUR 2 -->
+      <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+        <div class="w-12 h-12 rounded-xl bg-light-primary text-light-on-primary flex items-center justify-center mb-6 shadow-sm">
+          <span class="material-symbols-outlined text-[26px]">pin_drop</span>
+        </div>
+        <h3 class="font-headline text-headline-md text-light-primary mb-2">Integrasi Google Maps &amp; Waze</h3>
+        <p class="font-body text-body-sm text-light-outline">
+          Bantu pelanggan menemukan toko fisik, cafe, atau bengkel usahamu secara instan dengan peta interaktif dan panduan rute navigasi akurat.
+        </p>
+      </div>
+
+      <!-- FITUR 3 -->
+      <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+        <div class="w-12 h-12 rounded-xl bg-accent text-on-accent flex items-center justify-center mb-6 shadow-sm">
+          <span class="material-symbols-outlined text-[26px]">search</span>
+        </div>
+        <h3 class="font-headline text-headline-md text-light-primary mb-2">Ramah SEO Google Lokal</h3>
+        <p class="font-body text-body-sm text-light-outline">
+          Struktur kode HTML semantik standar industri yang membantu website usahamu mudah ditemukan ketika pelanggan mencari kata kunci produk di kotamu.
+        </p>
+      </div>
+
+      <!-- FITUR 4 -->
+      <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+        <div class="w-12 h-12 rounded-xl bg-light-primary-container text-light-on-primary-container flex items-center justify-center mb-6 shadow-sm">
+          <span class="material-symbols-outlined text-[26px]">speed</span>
+        </div>
+        <h3 class="font-headline text-headline-md text-light-primary mb-2">Loading Kilat &amp; Anti Lemot</h3>
+        <p class="font-body text-body-sm text-light-outline">
+          Dioptimalkan untuk kecepatan koneksi mobile pelanggan di seluruh Indonesia. Halaman terbuka dalam hitungan detik tanpa membuat pengunjung kabur.
+        </p>
+      </div>
+
+      <!-- FITUR 5 -->
+      <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+        <div class="w-12 h-12 rounded-xl bg-accent-container text-on-accent-container flex items-center justify-center mb-6 shadow-sm">
+          <span class="material-symbols-outlined text-[26px]">edit_note</span>
+        </div>
+        <h3 class="font-headline text-headline-md text-light-primary mb-2">Edit Menu &amp; Harga Mudah</h3>
+        <p class="font-body text-body-sm text-light-outline">
+          Dilengkapi panduan praktis dan formulir update berkala sehingga kamu bisa memperbarui foto produk baru atau mengubah daftar harga kapan saja.
+        </p>
+      </div>
+
+      <!-- FITUR 6 -->
+      <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+        <div class="w-12 h-12 rounded-xl bg-light-primary text-light-on-primary flex items-center justify-center mb-6 shadow-sm">
+          <span class="material-symbols-outlined text-[26px]">security</span>
+        </div>
+        <h3 class="font-headline text-headline-md text-light-primary mb-2">Free SSL &amp; Backup Rutin</h3>
+        <p class="font-body text-body-sm text-light-outline">
+          Sertifikat keamanan HTTPS gembok hijau yang memastikan data pengunjung terlindungi serta server tangguh dengan garansi uptime 99.9%.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ALUR PEMBUATAN / CARA KERJA -->
+  <section id="cara-kerja" class="py-20 bg-light-surface-container-low border-y border-light-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Proses Sangat Mudah</span>
+        <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+          3 Langkah Cepat Punya Website UMKM Sendiri
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- STEP 1 -->
+        <div class="p-8 rounded-3xl bg-light-surface border border-light-outline-variant/40 relative shadow-xs">
+          <div class="w-12 h-12 rounded-2xl bg-light-primary text-light-on-primary font-display font-bold text-xl flex items-center justify-center mb-6">
+            1
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Pilih Template Katalog</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Tentukan desain yang sesuai dengan jenis bisnis UMKM-mu dari katalog Fajar Creative. Bisa minta rekomendasi langsung dari konsultan kami.
+          </p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="p-8 rounded-3xl bg-light-surface border border-light-outline-variant/40 relative shadow-xs">
+          <div class="w-12 h-12 rounded-2xl bg-accent text-on-accent font-display font-bold text-xl flex items-center justify-center mb-6">
+            2
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Kirim Foto &amp; Menu Usaha</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Kirimkan logo, foto produk, daftar harga, dan nomor WhatsApp via form online simpel atau chat WhatsApp. Tim kami yang akan menata semuanya.
+          </p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="p-8 rounded-3xl bg-light-surface border border-light-outline-variant/40 relative shadow-xs">
+          <div class="w-12 h-12 rounded-2xl bg-light-primary text-light-on-primary font-display font-bold text-xl flex items-center justify-center mb-6">
+            3
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Website Siap Jualan!</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Dalam 1x24 jam website sudah aktif di internet dan langsung bisa disebar ke bio Instagram, TikTok, status WhatsApp, hingga kartu nama.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET & HARGA LENGKAP -->
+  <section id="kalkulator-paket" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Investasi Ramah Kantong</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Pilihan Paket Website UMKM Go-Digital
+      </h2>
+      <p class="font-body text-body-md text-light-outline mt-3">
+        Sekali bayar tanpa biaya bulanan tersembunyi. Termasuk hosting, domain, dan bantuan input data awal.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      
+      <!-- PAKET 1: STARTER UMKM -->
+      <div class="rounded-3xl p-8 bg-light-surface border border-light-outline-variant/40 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all">
+        <div>
+          <span class="text-label-sm font-label font-semibold text-light-outline uppercase tracking-wider">Paket Rintisan</span>
+          <h3 class="font-headline text-headline-lg text-light-primary mt-1">Starter UMKM</h3>
+          <p class="font-body text-body-sm text-light-outline mt-2">Cocok untuk pedagang kuliner rumahan, booth minuman, atau jasa perorangan.</p>
+          <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+            <span class="text-body-sm text-light-outline line-through">Rp 350.000</span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="font-display font-bold text-4xl text-light-primary">Rp 199.000</span>
+              <span class="text-body-sm text-light-outline">/ tahun</span>
+            </div>
+          </div>
+          <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>1 Halaman Landing Page Panjang</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Katalog hingga 15 Produk / Menu</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Tombol WhatsApp Order Instan</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Subdomain Gratis: <em>namausaha.fajarcreative.com</em></span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Gratis Hosting &amp; SSL 1 Tahun</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+          <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20ambil%20Paket%20Starter%20UMKM" target="_blank" rel="noopener" class="w-full py-3 rounded-full border border-light-primary text-light-primary font-label text-label-md font-semibold flex items-center justify-center hover:bg-light-primary hover:text-light-on-primary transition-colors">
+            Pilih Paket Starter
+          </a>
+        </div>
+      </div>
+
+      <!-- PAKET 2: BISNIS PRO (PALING LARIS) -->
+      <div class="rounded-3xl p-8 bg-light-surface border-2 border-accent relative flex flex-col justify-between shadow-xl">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-accent text-on-accent px-4 py-1 rounded-full text-label-sm font-label font-bold tracking-wide uppercase shadow-sm">
+          Rekomendasi Terbaik
+        </div>
+        <div>
+          <span class="text-label-sm font-label font-semibold text-accent uppercase tracking-wider">Paket Unggulan</span>
+          <h3 class="font-headline text-headline-lg text-light-primary mt-1">Bisnis Pro</h3>
+          <p class="font-body text-body-sm text-light-outline mt-2">Untuk cafe, butik, toko online, dan jasa yang ingin tampil bonafide dengan domain sendiri.</p>
+          <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+            <span class="text-body-sm text-light-outline line-through">Rp 750.000</span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="font-display font-bold text-4xl text-light-primary">Rp 449.000</span>
+              <span class="text-body-sm text-light-outline">/ tahun</span>
+            </div>
+          </div>
+          <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span class="font-semibold">Gratis Domain Kustom (.com / .id) 1 Tahun</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Katalog hingga 50 Produk / Layanan</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Keranjang Belanja Mini &amp; Checkout WhatsApp</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Integrasi Google Maps &amp; Jam Operasional</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Bantuan Input Konten Awal Sampai Beres</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>SEO Google Lokal Siap Indeks</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+          <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20pesan%20Paket%20Bisnis%20Pro%20UMKM" target="_blank" rel="noopener" class="w-full py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-lg font-bold flex items-center justify-center gap-2 hover:opacity-95 shadow-md active:scale-95 transition-all">
+            <span>Ambil Paket Bisnis Pro</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- PAKET 3: KATALOG CUSTOM / BINAAN UMKM -->
+      <div class="rounded-3xl p-8 bg-light-surface border border-light-outline-variant/40 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all">
+        <div>
+          <span class="text-label-sm font-label font-semibold text-light-primary uppercase tracking-wider">Komunitas &amp; Pemda</span>
+          <h3 class="font-headline text-headline-lg text-light-primary mt-1">Portal Direktori UMKM</h3>
+          <p class="font-body text-body-sm text-light-outline mt-2">Untuk asosiasi bisnis, dinas koperasi/UMKM, dan paguyuban pedagang multi-vendor.</p>
+          <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+            <span class="text-body-sm text-light-outline">Paket Multi-Tenant / Direktori</span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="font-display font-bold text-4xl text-light-primary">Rp 1.490.000</span>
+              <span class="text-body-sm text-light-outline">/ portal</span>
+            </div>
+          </div>
+          <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Showcase Direktori hingga 100+ Usaha Binaan</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Filter Kategori Produk &amp; Lokasi Kelurahan</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Halaman Khusus Profil Tiap Anggota</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-success text-[18px]">check</span>
+              <span>Pelatihan Admin &amp; Support Teknis Prioritas</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+          <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20konsultasi%20Portal%20Direktori%20UMKM" target="_blank" rel="noopener" class="w-full py-3 rounded-full bg-accent text-on-accent font-label text-label-md font-bold flex items-center justify-center hover:brightness-105 transition-all shadow-sm">
+            Konsultasi Portal UMKM
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 bg-light-surface-container-low border-y border-light-outline-variant/30">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Tanya Jawab</span>
+        <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+          Hal yang Kerap Ditanyakan Pemilik Usaha
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+          <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+            <span>Apakah saya harus bisa coding atau paham teknis website?</span>
+            <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+            Sama sekali tidak perlu! Tim Fajar Creative yang akan menyiapkan setup hosting, domain, penataan desain, penulisan informasi kontak, dan upload foto produkmu. Kamu tinggal terima beres dan langsung pakai jualan.
+          </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+          <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+            <span>Bagaimana cara pelanggan membeli produk dari website saya?</span>
+            <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+            Saat pelanggan menekan tombol &#34;Beli / Pesan&#34;, website otomatis menyusun format nota pesan berisi daftar produk yang dipilih lalu membuka aplikasi WhatsApp langsung ke nomor admin tokomu.
+          </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+          <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+            <span>Apakah ada komisi potongan per transaksi penjualan?</span>
+            <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+            Tidak ada komisi (0%). Semua pembayaran dari pelanggan masuk 100% langsung ke rekening bank atau dompet digital pribadimu tanpa potongan apa pun dari pihak kami.
+          </p>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+          <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+            <span>Berapa lama proses pembuatan hingga website aktif?</span>
+            <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+            Jika materi logo dan daftar produk sudah lengkap, website rata-rata selesai dalam kurun waktu 1x24 jam kerja.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BANNER -->
+  <section class="py-20 md:py-24 max-w-7xl mx-auto px-6">
+    <div class="rounded-3xl bg-gradient-to-r from-light-primary to-[#184a3b] text-light-on-primary p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+      <div class="max-w-2xl mx-auto space-y-6 relative z-10">
+        <span class="px-4 py-1.5 rounded-full bg-accent/20 text-accent font-label text-label-sm font-bold border border-accent/40 inline-block">
+          Jangan Tunda Go Digital
+        </span>
+        <h2 class="font-display text-display-lg-mobile md:text-headline-xl text-white">
+          Waktunya Usaha UMKM-mu Dikenal Luas &amp; Dipercaya Pembeli
+        </h2>
+        <p class="font-body text-body-lg text-light-on-primary/80">
+          Konsultasikan kebutuhan website usahamu sekarang bersama tim Fajar Creative. Dapatkan diskon khusus UMKM hari ini.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <a href="#katalog-bisnis" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-on-accent font-label text-label-lg font-bold shadow-lg hover:brightness-105 active:scale-95 transition-all">
+            <span class="material-symbols-outlined text-[22px]">storefront</span>
+            <span>Pilih Template Bisnis</span>
+          </a>
+          <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20ingin%20konsultasi%20website%20UMKM" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white font-label text-label-lg font-semibold hover:bg-white/20 transition-all">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            <span>WhatsApp Konsultasi Gratis</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-light-surface-container border-t border-light-outline-variant/40 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-light-outline-variant/30">
+        
+        <!-- COL 1 & 2: BRAND -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center font-display font-bold text-lg">
+              FC
+            </div>
+            <span class="font-display font-bold text-xl tracking-tight text-light-primary">FAJAR CREATIVE</span>
+          </div>
+          <p class="font-body text-body-sm text-light-outline max-w-sm">
+            Mitra resmi digitalisasi Usaha Mikro, Kecil, dan Menengah (UMKM). Menyediakan katalog template website siap pakai, integrasi WhatsApp order, dan optimasi profil bisnis lokal di seluruh nusantara.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-light-primary">
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors" title="Instagram">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors" title="WhatsApp">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors" title="Email">
+              <span class="material-symbols-outlined text-[18px]">mail</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- COL 3: KATALOG SEKTOR -->
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Katalog Sektor</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li><a href="#katalog-bisnis" class="hover:text-light-primary transition-colors">Kuliner &amp; Kafe</a></li>
+            <li><a href="#katalog-bisnis" class="hover:text-light-primary transition-colors">Fashion &amp; Butik Batik</a></li>
+            <li><a href="#katalog-bisnis" class="hover:text-light-primary transition-colors">Jasa Servis &amp; Laundry</a></li>
+            <li><a href="#katalog-bisnis" class="hover:text-light-primary transition-colors">Minimarket &amp; Retail</a></li>
+            <li><a href="#katalog-bisnis" class="hover:text-light-primary transition-colors">Kriya &amp; Kerajinan Tangan</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 4: SOLUSI GO-DIGITAL -->
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Layanan Kami</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li><a href="#fitur-wajib" class="hover:text-light-primary transition-colors">Website 1 Hari Jadi</a></li>
+            <li><a href="#fitur-wajib" class="hover:text-light-primary transition-colors">WhatsApp Checkout System</a></li>
+            <li><a href="#fitur-wajib" class="hover:text-light-primary transition-colors">Pendaftaran Domain &amp; SSL</a></li>
+            <li><a href="#showcase-binaan" class="hover:text-light-primary transition-colors">Showcase Direktori UMKM</a></li>
+            <li><a href="#kalkulator-paket" class="hover:text-light-primary transition-colors">Paket Kemitraan Komunitas</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 5: KONTAK -->
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Kontak Bantuan</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-success">chat</span>
+              <span>0823-3890-3403</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-light-outline">mail</span>
+              <span>umkm@fajarcreative.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-light-outline">schedule</span>
+              <span>Senin - Sabtu (08.00 - 20.00 WIB)</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-body-sm text-light-outline gap-4">
+        <p>© 2026 Fajar Creative UMKM. Seluruh hak cipta dilindungi.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-light-primary transition-colors">Syarat &amp; Ketentuan</a>
+          <a href="#" class="hover:text-light-primary transition-colors">Kebijakan Privasi</a>
+          <a href="#cara-kerja" class="hover:text-light-primary transition-colors">Panduan Mitra</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>

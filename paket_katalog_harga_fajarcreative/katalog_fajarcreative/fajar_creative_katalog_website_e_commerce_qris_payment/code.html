@@ -1,0 +1,941 @@
+<!DOCTYPE html><html lang="id" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Website E-Commerce &amp; QRIS — Fajar Creative | Solusi Toko Online Mandiri &amp; Pembayaran Instan</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#C59B27',
+        'on-accent': '#383838',
+        'accent-container': '#FDF4DE',
+        'on-accent-container': '#574100',
+        'success': '#1F7A4D',
+        'on-success': '#FFFFFF',
+        'light-primary': '#143D30',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#D1EADB',
+        'light-on-primary-container': '#042118',
+        'light-surface': '#FDFCF7',
+        'light-on-surface': '#1C1F1E',
+        'light-surface-container-low': '#F7F5EE',
+        'light-surface-container': '#EFECE2',
+        'light-surface-container-high': '#E7E4D8',
+        'light-outline': '#737A75',
+        'light-outline-variant': '#C2C8C3',
+        'dark-primary': '#94D5BE',
+        'dark-on-primary': '#003829',
+        'dark-primary-container': '#0E513F',
+        'dark-on-primary-container': '#B0F2DA',
+        'dark-surface': '#111413',
+        'dark-on-surface': '#E1E3DF',
+        'dark-surface-container-low': '#191C1B',
+        'dark-surface-container': '#1F2321',
+        'dark-surface-container-high': '#292E2B',
+        'dark-outline': '#8D938E',
+        'dark-outline-variant': '#424844',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-gap': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Cinzel"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'body': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'label': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '60px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-xl': ['40px', { lineHeight: '48px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-xl-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.3px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '300ms',
+        'filter-switch': '200ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'filter-switch': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        'surface-enter': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'filter-switch': 'ease-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased min-h-[1024px] selection:bg-accent-container selection:text-on-accent-container" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- TOP PROMO & BENEFIT BANNER -->
+  <div class="bg-light-primary text-light-on-primary py-2.5 px-4 text-center text-label-sm font-label flex items-center justify-center gap-2 border-b border-light-primary-container/20">
+    <span class="material-symbols-outlined text-[16px] text-accent">shopping_bag</span>
+    <span>Solusi Toko Online Tanpa Potongan Marketplace 2026: Integrasi QRIS Dinamis Otomatis + Cek Ongkir Ekspedisi &amp; Notifikasi WhatsApp!</span>
+    <a href="#katalog-ecommerce" class="underline underline-offset-2 ml-1.5 font-bold hover:text-accent transition-colors">Lihat Katalog Template</a>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-light-surface/95 backdrop-blur-md border-b border-light-outline-variant/40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- BRAND LOGO -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center font-display font-bold text-lg group-hover:bg-accent group-hover:text-on-accent transition-colors shadow-sm">
+          FC
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-xl tracking-tight text-light-primary">FAJAR CREATIVE</span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-light-outline">E-Commerce &amp; QRIS Payment Gateway</span>
+        </div>
+      </a>
+
+      <!-- NAV LINKS -->
+      <nav class="hidden lg:flex items-center gap-7">
+        <a href="#katalog-ecommerce" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Katalog Toko Online</a>
+        <a href="#sektor-ecom" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Sektor Bisnis</a>
+        <a href="#fitur-qris" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Integrasi QRIS &amp; Logistik</a>
+        <a href="#simulator-checkout" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Simulator Checkout</a>
+        <a href="#harga-toko" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Paket &amp; Investasi</a>
+      </nav>
+
+      <!-- HEADER ACTIONS -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20konsultasi%20pembuatan%20website%20toko%20online%20e-commerce%20QRIS" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-light-outline-variant text-light-primary font-label text-label-md hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[18px] text-success">chat</span>
+          <span>Konsultasi Toko Online</span>
+        </a>
+        <a href="#katalog-ecommerce" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md hover:opacity-95 shadow-sm active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-[18px]">storefront</span>
+          <span>Pilih Template</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH QRIS & SHOPPING CART MOCKUP -->
+  <section class="relative overflow-hidden pt-12 pb-20 md:pt-16 md:pb-28 border-b border-light-outline-variant/30 bg-gradient-to-b from-light-surface via-light-surface-container-low/50 to-light-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- HERO COPY -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-container text-on-accent-container font-label text-label-sm font-semibold border border-accent/20 w-fit">
+            <span class="material-symbols-outlined text-[16px] text-accent">qr_code_scanner</span>
+            <span>Platform Toko Online Mandiri &amp; QRIS Otomatis #1 Fajar Creative</span>
+          </div>
+
+          <h1 class="font-display text-display-lg-mobile md:text-display-lg text-light-primary tracking-tight leading-tight">
+            Katalog Website E-Commerce Mandiri dengan Pembayaran QRIS Cepat
+          </h1>
+
+          <p class="font-body text-body-lg text-light-outline text-pretty">
+            Miliki toko online profesional milik brand sendiri tanpa potongan komisi marketplace yang mencekik (hemat 5-10% tiap transaksi). Lengkap dengan <strong>QRIS otomatis semua bank &amp; e-wallet, hitung ongkir kurir nasional (JNE, J&amp;T, SiCepat), dan notifikasi WhatsApp instan</strong>.
+          </p>
+
+          <!-- VALUE HIGHLIGHT PILLS -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="flex items-center gap-2 text-body-sm text-light-on-surface">
+              <span class="material-symbols-outlined text-success text-[18px]">check_circle</span>
+              <span>QRIS BCA, Mandiri, Gopay, OVO</span>
+            </div>
+            <div class="flex items-center gap-2 text-body-sm text-light-on-surface">
+              <span class="material-symbols-outlined text-success text-[18px]">check_circle</span>
+              <span>Kalkulator Ongkir Otomatis</span>
+            </div>
+            <div class="flex items-center gap-2 text-body-sm text-light-on-surface">
+              <span class="material-symbols-outlined text-success text-[18px]">check_circle</span>
+              <span>Order Notif WhatsApp Admin</span>
+            </div>
+          </div>
+
+          <!-- CTAS -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#katalog-ecommerce" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all">
+              <span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span>
+              <span>Jelajahi Template E-Commerce</span>
+            </a>
+            <a href="#simulator-checkout" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-light-outline-variant bg-light-surface text-light-primary font-label text-label-lg hover:bg-light-surface-container transition-all">
+              <span class="material-symbols-outlined text-[20px] text-accent">qr_code_2</span>
+              <span>Coba Demo Scan QRIS</span>
+            </a>
+          </div>
+
+          <!-- TRUST BADGE -->
+          <div class="pt-6 border-t border-light-outline-variant/40 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-light-primary-container text-light-on-primary-container flex items-center justify-center font-bold text-sm">
+              <span class="material-symbols-outlined text-[22px]">payments</span>
+            </div>
+            <div>
+              <p class="font-headline font-bold text-sm text-light-primary">Memproses 150.000+ Transaksi Penjualan Online</p>
+              <p class="text-body-sm text-light-outline">Dipakai oleh brand fashion lokal, produsen skincare, gadget store &amp; F&amp;B.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO SHOWCASE GRAPHIC -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-light-surface-container bg-light-surface-container">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAUCkAfT1vyhgCK0FuzPJO98hX7awkv4WEhhDn5tnCzNCGFif-KS9S-xIuIRzKaY44aEvMnyvdz7HcRIuEVAxdHeTlbZ61Fnino8bfst2-3fqD82Z81NSOpiIcsR4avObka-1dyOdyIi6AZG12nnkJhUNxTdWMhp84FCUVR31IlfUIHTdinfP5bmA2IjH_Nxy4HRN0db7DhBGeAByxkUGtgUIj2ytYc2UN60GboDogB21XJHz64TF1cR6496lTwdZA" alt="Showcase Website Toko Online E-Commerce dan QRIS Fajar Creative" class="w-full h-auto object-cover hover:scale-102 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 right-4 bg-light-surface/90 backdrop-blur-md p-4 rounded-2xl border border-light-outline-variant/40 shadow-lg flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-label font-bold uppercase tracking-wider text-accent">Zero Commission Store</span>
+                <p class="font-headline font-bold text-sm text-light-primary">Uang Penjualan Cair 100% Masuk ke Rekening Pribadimu</p>
+              </div>
+              <a href="#katalog-ecommerce" class="px-3.5 py-1.5 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity whitespace-nowrap">
+                Lihat Desain
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS & IMPACT METRICS -->
+  <section class="bg-light-surface-container-low py-8 border-b border-light-outline-variant/40">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-light-primary">0%</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Bebas Potongan Biaya Admin Penjualan</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-light-primary">3 Detik</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Generate QRIS Dinamis Sesuai Total Belanja</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-light-primary">500+ Kota</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Jangkauan Ongkir Seluruh Indonesia</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-accent">1 Hari</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Website Toko Online Siap Terima Order</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG TEMPLATE E-COMMERCE BERBAGAI SEKTOR -->
+  <section id="katalog-ecommerce" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Koleksi Desain Siap Pakai</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Katalog Template Toko Online E-Commerce &amp; QRIS Terlengkap
+      </h2>
+      <p class="font-body text-body-md text-light-outline mt-3">
+        Pilih template yang sesuai dengan gaya produkmu. Dilengkapi keranjang belanja geser (slide-out cart), pemilih varian ukuran/warna, dan alur pembayaran QRIS yang super mulus.
+      </p>
+
+      <!-- FILTER TABS -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-2">
+        <button class="px-5 py-2.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md shadow-sm">
+          Semua Sektor (48)
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Fashion &amp; Modest Wear
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Skincare &amp; Kosmetik
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Gadget &amp; Elektronik
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          F&amp;B &amp; Makanan Kemasan
+        </button>
+      </div>
+    </div>
+
+    <!-- CATALOG GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- ITEM 1: FASHION & BOUTIQUE -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDQpNXcxZjxwafZT_MkzxsczxUhceqmUDsWzXerjqvbr4MXgSdkfO_TZ80EQdH9iXT1T673meB_rEOGEqCycOaMlYNHcqxmxaQxvcjxDzS6S767d2UOXex2ulG3VHSm1Jd6Y0L1m8O8DH5Lb8lyL0MlT4V3F-dcvMiSNEt74FVqC14EKjruvnARVSVfWN09rtRxyW_zOSKK7dQgSoo-AK8Ppz_swHcKxGpBbmnXJI3fRzPjzaDOxc-TwkY-ckeJ" alt="Template Fashion Boutique E-Commerce" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Fashion &amp; Outfit</span>
+          <span class="absolute top-3 right-3 bg-accent text-on-accent px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Best Seller</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-FAS01</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (340+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Vogue Modest &amp; Apparel</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Desain editorial majalah mode, pemilih variasi ukuran (S/M/L/XL), galeri lookbook model, dan tombol instan checkout QRIS.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Varian Ukuran &amp; Warna</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">QRIS Otomatis</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 550.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 349.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Fashion%20FC-FAS01" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 2: SKINCARE & BEAUTY COSMETICS -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDQyEdO-d4ui_ZT2RuoIkkAMDs0aguTAHtMFX5neuH1dAq5aPOQo4yVTxbUBqvUQBGDr_NxT1_WOBCd0Whns8qd5RxrqV36K6Puv26CVvvORDky16PUgiGW-s5TInyXl2RUZ3Ediy0K0aLbM2SXcjtARCjCtcQYMBmtXzPHeDMufUkGHff2NqG9RUnHq2LmcY1iVyLvWAFaSJhtvpv7sAY_MUbuEz9W5oLI6aLX2P20PtSJdKjCyVGKhie7dBA" alt="Template Skincare &amp; Beauty" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Beauty &amp; Skincare</span>
+          <span class="absolute top-3 right-3 bg-light-primary text-light-on-primary px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Trending</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-SKN02</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (290+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">PureBotanics Glow Care</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Nuansa bersih estetik cream, lencana sertifikasi BPOM/Halal, ulasan bintang dan foto pembeli asli, serta bundling diskon paket hemat.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Paket Bundling Hemat</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Ulasan Rating BPOM</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 580.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 369.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Skincare%20FC-SKN02" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 3: GADGET & ELEKTRONIK -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrArfp85MfMWFvSaToxjO_eZpor9baEI_834X4yL-2s7iuKObE9fzW_mIy6RwmVRuR8muDqnIvrKEm61233wgSrmBUiT9vG--cbFYpZ6ii4Ud5e63qdvoRdA2alKGbc-JD6EQ7YCo0UE29GkAQn9_BfNW4YNzlZi-leOKhvCWt3ak8018-E7x3TfE7tcGTkClN56rPAUiSkAnuy5rcjHXbU3GlCt6Hi5JV7ME_CcBbTIfsjZ940EZvCB9pA-3ZvnXKaV" alt="Template Gadget &amp; Aksesoris" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Gadget &amp; Audio</span>
+          <span class="absolute top-3 right-3 bg-accent-container text-on-accent-container px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">High-Tech</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-GDG03</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.8 (210+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">TechPulse Gear Store</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Desain modern dinamis untuk aksesoris smartphone, TWS earphone, charger, dan smartwatch dengan cek garansi resmi serial number.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Cek Resi Pengiriman</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Garansi Toko 1 Tahun</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 590.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 379.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Gadget%20FC-GDG03" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 4: F&B & MAKANAN KEMASAN -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCZqg-b_gUiNNxO7BeCDNo0o2h4caPusr4rXdNw0Xf6AfzcVoQmCwtQQjJcSo66F_381HxVgo6A52_etmAXU7lpusNSkTfuv4dqORCNlgaB7ij8iXefN6yQNVsX8cFbnhuPUZyuvf5OkST1VBLuTgYNvuuTnWb__zSbyQul2rgwKsX9w5xWJ0KNIJwVEof6pRunJw2dFL9Bn6CHXY7L2mcW0_9VNyUVUSngEgP9lVll7JdcDq0DcKMwyFuFYw3eZF0" alt="Template Makanan Kemasan &amp; Kopi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Kuliner &amp; Frozen</span>
+          <span class="absolute top-3 right-3 bg-light-primary-container text-light-on-primary-container px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Praktis</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-FNB04</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (260+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Dapur Nusantara Gourmet</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Untuk cemilan kemasan oleh-oleh, frozen food siap saji, dan biji kopi sangrai. Dukungan opsi kurir instan Grab/Gojek dan Paxel pendingin.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Instant / Sameday</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Grosir &amp; Reseller</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 520.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 329.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20FNB%20FC-FNB04" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FITUR INTEGRASI QRIS & LOGISTIK -->
+  <section id="fitur-qris" class="py-20 bg-light-surface-container-low border-y border-light-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Teknologi Pembayaran &amp; Pengiriman</span>
+        <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+          Fitur Komplit E-Commerce Siap Jualan Nasional
+        </h2>
+        <p class="font-body text-body-md text-light-outline mt-3">
+          Memadukan kemudahan bayar scan QRIS dengan efisiensi sistem perhitungan biaya kirim ekspedisi secara langsung.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- FITUR 1 -->
+        <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-accent text-on-accent flex items-center justify-center mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-[26px]">qr_code_2</span>
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">QRIS Dinamis Semua Bank</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Setiap pesanan menghasilkan kode QRIS unik dengan nominal tagihan tepat hingga 3 digit terakhir. Kompatibel dengan BCA Mobile, Livin Mandiri, BRImo, Gopay, OVO, ShopeePay, dan DANA.
+          </p>
+        </div>
+
+        <!-- FITUR 2 -->
+        <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-success text-on-success flex items-center justify-center mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-[26px]">chat</span>
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Checkout WhatsApp Terstruktur</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Opsi checkout fleksibel bagi pembeli yang ingin mengobrol terlebih dahulu dengan admin. Format invoice pesanan, alamat tujuan, dan total biaya otomatis terkirim rapi ke WhatsApp toko.
+          </p>
+        </div>
+
+        <!-- FITUR 3 -->
+        <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-light-primary text-light-on-primary flex items-center justify-center mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-[26px]">local_shipping</span>
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Kalkulator Ongkir Seluruh Indonesia</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Terkoneksi dengan tarif ekspedisi populer (JNE, J&amp;T, SiCepat, Anteraja, Pos Indonesia). Pembeli cukup memasukkan nama kecamatan dan ongkos kirim langsung terhitung otomatis.
+          </p>
+        </div>
+
+        <!-- FITUR 4 -->
+        <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-light-primary-container text-light-on-primary-container flex items-center justify-center mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Keranjang Belanja Geser (Slide-Cart)</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Pengalaman belanja cepat tanpa perlu berpindah-pindah halaman. Pelanggan bisa menambah produk, mengubah jumlah (qty), dan melihat subtotal belanja seketika.
+          </p>
+        </div>
+
+        <!-- FITUR 5 -->
+        <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-accent-container text-on-accent-container flex items-center justify-center mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-[26px]">loyalty</span>
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Kupon Diskon &amp; Promo Flash Sale</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Buat kode kupon diskon persentase (misal: &#34;PROMO20&#34;) atau potongan nominal rupiah untuk memicu lonjakan pembelian saat kampanye tanggal kembar (Payday).
+          </p>
+        </div>
+
+        <!-- FITUR 6 -->
+        <div class="p-8 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all duration-300 shadow-xs hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-light-primary text-light-on-primary flex items-center justify-center mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-[26px]">dashboard_customize</span>
+          </div>
+          <h3 class="font-headline text-headline-md text-light-primary mb-2">Panel Kelola Produk Super Simpel</h3>
+          <p class="font-body text-body-sm text-light-outline">
+            Upload foto produk baru, update stok barang, dan ubah harga diskon dapat dilakukan dengan mudah dari handphone tanpa perlu pengetahuan coding sama sekali.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULATOR CHECKOUT QRIS INTERAKTIF -->
+  <section id="simulator-checkout" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="rounded-3xl bg-light-primary text-light-on-primary p-8 md:p-14 overflow-hidden relative shadow-2xl">
+      <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- COPYWRITING -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="px-3.5 py-1.5 rounded-full bg-accent/20 text-accent font-label text-label-sm font-semibold border border-accent/40 inline-flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">touch_app</span>
+            <span>Simulasi Pembayaran Pelanggan</span>
+          </span>
+          <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-white">
+            Pelanggan Tinggal Scan QRIS, Orderan Langsung Masuk Siap Diproses
+          </h2>
+          <p class="font-body text-body-md text-light-on-primary/80 text-pretty">
+            Alur checkout dirancang seringkas mungkin dalam 3 langkah: Pilih Barang &amp; Ongkir → Scan QRIS Bank/E-Wallet → Notifikasi WhatsApp Otomatis ke Penjual &amp; Pembeli.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent text-[20px] mt-0.5">check_circle</span>
+              <p class="text-body-sm text-light-on-primary/90"><strong>Keamanan Standar Bank Indonesia:</strong> QRIS berstandar nasional resmi yang dapat dipindai oleh semua aplikasi perbankan digital.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent text-[20px] mt-0.5">check_circle</span>
+              <p class="text-body-sm text-light-on-primary/90"><strong>Verifikasi Manual / Otomatis:</strong> Pembeli dapat mengunggah bukti transfer atau sistem mengecek otomatis saldo masuk.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent text-[20px] mt-0.5">check_circle</span>
+              <p class="text-body-sm text-light-on-primary/90"><strong>Cetak Label Pengiriman:</strong> Format alamat penerima rapi dan siap ditempel langsung di paket kardus belanjaan.</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20bikin%20website%20toko%20online%20dengan%20fitur%20checkout%20QRIS" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-accent text-on-accent font-label text-label-lg font-bold hover:brightness-105 shadow-md transition-all">
+              <span class="material-symbols-outlined text-[20px]">store</span>
+              <span>Bikin Toko Online QRIS Saya</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- SIMULATOR WIDGET CHECKOUT QRIS -->
+        <div class="lg:col-span-6 bg-light-surface text-light-on-surface rounded-2xl p-6 md:p-8 shadow-xl border border-light-outline-variant/30">
+          <div class="flex items-center justify-between pb-4 border-b border-light-outline-variant/30 mb-6">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-400"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+              <span class="w-3 h-3 rounded-full bg-green-400"></span>
+              <span class="text-xs font-mono text-light-outline ml-2">tokokita.fajarcreative.com/checkout</span>
+            </div>
+            <span class="text-[11px] font-label text-success font-semibold flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-success animate-ping"></span> QRIS Ready
+            </span>
+          </div>
+
+          <!-- MINI SIMULATOR CONTAINER -->
+          <div class="space-y-4">
+            <!-- RINGKASAN PRODUK -->
+            <div class="p-3.5 rounded-xl bg-light-surface-container border border-light-outline-variant/40 flex items-center justify-between text-xs">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-light-primary/10 flex items-center justify-center font-bold text-light-primary">
+                  1x
+                </div>
+                <div>
+                  <p class="font-bold text-light-primary">Glow Radiant Hydrating Serum</p>
+                  <p class="text-[11px] text-light-outline">Varian: 30ml + Ekspedisi J&amp;T Regular</p>
+                </div>
+              </div>
+              <span class="font-bold text-light-primary">Rp 149.000</span>
+            </div>
+
+            <!-- TAMPILAN KODE QRIS -->
+            <div class="p-4 rounded-xl bg-light-surface border-2 border-dashed border-light-outline-variant flex flex-col items-center justify-center text-center">
+              <span class="text-[11px] font-label font-bold text-light-primary uppercase tracking-wider mb-2">Pindai QRIS untuk Menyelesaikan Pembayaran</span>
+              
+              <!-- QRIS CODE PLACEHOLDER SVG -->
+              <div class="w-36 h-36 p-2 bg-white rounded-xl shadow-md border border-neutral-200 flex items-center justify-center relative">
+                <div class="grid grid-cols-4 gap-1 w-full h-full p-1">
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-transparent"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-transparent"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-transparent"></div>
+                  <div class="bg-transparent"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-transparent"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-black rounded-xs"></div>
+                  <div class="bg-black rounded-xs"></div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <span class="px-1.5 py-0.5 rounded bg-light-primary text-white text-[9px] font-bold">QRIS</span>
+                </div>
+              </div>
+
+              <p class="text-[11px] text-light-outline mt-2 font-mono">NMID: ID1020261948293 • Toko Kita Official</p>
+            </div>
+
+            <!-- HASIL TOTAL & TOMBOL KONFIRMASI -->
+            <div class="p-3.5 rounded-xl bg-accent-container/50 border border-accent/30 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-light-outline uppercase font-label">Total Tagihan (Termasuk Ongkir):</span>
+                <p class="font-display font-bold text-lg text-light-primary">Rp 167.000</p>
+                <span class="text-[10px] text-success font-semibold">✓ Bebas potongan biaya admin</span>
+              </div>
+              <button class="px-4 py-2 rounded-full bg-success text-on-success text-xs font-label font-bold flex items-center gap-1.5 shadow-sm hover:opacity-90">
+                <span class="material-symbols-outlined text-[16px]">verified</span>
+                <span>Konfirmasi via WA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET & HARGA INVESTASI -->
+  <section id="harga-toko" class="py-20 md:py-28 bg-light-surface-container-low border-b border-light-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Investasi Transparan</span>
+        <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+          Pilihan Paket Pembuatan Website E-Commerce &amp; QRIS
+        </h2>
+        <p class="font-body text-body-md text-light-outline mt-3">
+          Toko online milikmu seutuhnya. Tanpa potongan komisi penjualan tiap barang laku.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- PAKET 1: TOKO ONLINE STARTER -->
+        <div class="rounded-3xl p-8 bg-light-surface border border-light-outline-variant/40 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all">
+          <div>
+            <span class="text-label-sm font-label font-semibold text-light-outline uppercase tracking-wider">Pemula &amp; Toko Rintisan</span>
+            <h3 class="font-headline text-headline-lg text-light-primary mt-1">E-Commerce Basic</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">Pilihan tepat untuk jualan online katalog simpel dengan checkout WhatsApp &amp; QRIS statis.</p>
+            <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+              <span class="text-body-sm text-light-outline line-through">Rp 499.000</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-display font-bold text-4xl text-light-primary">Rp 299.000</span>
+                <span class="text-body-sm text-light-outline">/ tahun</span>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Katalog hingga 30 Produk Pilihan</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Checkout WhatsApp Format Otomatis</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>QRIS Statis Toko Tanpa Potongan Fee</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Subdomain: <em>tokokamu.fajarcreative.com</em></span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Gratis Hosting &amp; SSL Keamanan 1 Tahun</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20ambil%20Paket%20E-Commerce%20Basic" target="_blank" rel="noopener" class="w-full py-3 rounded-full border border-light-primary text-light-primary font-label text-label-md font-semibold flex items-center justify-center hover:bg-light-primary hover:text-light-on-primary transition-colors">
+              Pilih Paket Basic
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKET 2: TOKO PRO AUTO QRIS (PALING LARIS) -->
+        <div class="rounded-3xl p-8 bg-light-surface border-2 border-accent relative flex flex-col justify-between shadow-xl">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-accent text-on-accent px-4 py-1 rounded-full text-label-sm font-label font-bold tracking-wide uppercase shadow-sm">
+            Rekomendasi Terlaris
+          </div>
+          <div>
+            <span class="text-label-sm font-label font-semibold text-accent uppercase tracking-wider">Brand Mandiri &amp; Toko Pro</span>
+            <h3 class="font-headline text-headline-lg text-light-primary mt-1">E-Commerce Pro QRIS</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">Untuk brand fashion, skincare, dan toko online yang ingin checkout otomatis &amp; domain sendiri.</p>
+            <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+              <span class="text-body-sm text-light-outline line-through">Rp 990.000</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-display font-bold text-4xl text-light-primary">Rp 549.000</span>
+                <span class="text-body-sm text-light-outline">/ tahun</span>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span class="font-semibold">Gratis Domain Kustom (.com) 1 Tahun</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Katalog hingga 150 Produk &amp; Varian Ukuran/Warna</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Payment Gateway QRIS Dinamis Otomatis</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Integrasi Cek Ongkir Otomatis Ekspedisi</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Keranjang Belanja Geser &amp; Fitur Kupon Promo</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Bantuan Input 20 Produk Awal Sampai Beres</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20ambil%20Paket%20E-Commerce%20Pro%20QRIS" target="_blank" rel="noopener" class="w-full py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-lg font-bold flex items-center justify-center gap-2 hover:opacity-95 shadow-md active:scale-95 transition-all">
+              <span>Ambil Paket Pro QRIS</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKET 3: ENTERPRISE & MULTI-GUDANG -->
+        <div class="rounded-3xl p-8 bg-light-surface border border-light-outline-variant/40 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all">
+          <div>
+            <span class="text-label-sm font-label font-semibold text-light-primary uppercase tracking-wider">Distributor &amp; Multi-Cabang</span>
+            <h3 class="font-headline text-headline-lg text-light-primary mt-1">Multi-Vendor &amp; Reseller</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">Untuk produsen dengan ratusan agen reseller, stok multi-cabang, dan ribuan SKU produk.</p>
+            <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+              <span class="text-body-sm text-light-outline">Paket Khusus Skala Besar</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-display font-bold text-4xl text-light-primary">Rp 1.350.000</span>
+                <span class="text-body-sm text-light-outline">/ tahun</span>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Kapasitas Produk Unlimited (Ribuan SKU)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Dashboard Khusus Agen &amp; Reseller Toko</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Multi-Payment: QRIS, Virtual Account, E-Wallet &amp; COD</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Integrasi API Resi Otomatis &amp; Cetak Thermal Label</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Prioritas Konsultasi &amp; Maintenance 24/7</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20konsultasi%20Paket%20E-Commerce%20Multi-Vendor" target="_blank" rel="noopener" class="w-full py-3 rounded-full bg-accent text-on-accent font-label text-label-md font-bold flex items-center justify-center hover:brightness-105 transition-all shadow-sm">
+              Konsultasi Multi-Vendor
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Informasi Pembayaran &amp; Toko</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Pertanyaan Umum Seputar Website Toko Online &amp; QRIS
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+        <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+          <span>Apakah saya harus punya rekening bank bisnis PT/CV untuk memakai QRIS?</span>
+          <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+          Tidak harus! Kamu bisa menggunakan rekening pribadi perorangan (seperti BCA, BRI, Mandiri, atau akun Gopay/OVO Merchant pribadi). Tim Fajar Creative akan membantu panduan setup integrasi hingga kode QRIS siap menerima pembayaran dari pembeli.
+        </p>
+      </details>
+
+      <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+        <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+          <span>Apakah ada potongan komisi per penjualan dari pihak Fajar Creative?</span>
+          <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+          Sama sekali tidak ada (0%). Berbeda dengan marketplace yang memotong 5% hingga 10% setiap barang terjual, di website mandiri ini uang pembayaran dari pembeli masuk 100% langsung ke rekening atau e-wallet milik tokomu sendiri.
+        </p>
+      </details>
+
+      <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+        <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+          <span>Bagaimana cara pelanggan mengetahui ongkos kirim ke kotanya?</span>
+          <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+          Di halaman checkout, pelanggan cukup memilih provinsi, kota, dan kecamatan tujuan pengiriman. Sistem website akan langsung menampilkan pilihan kurir (JNE, J&amp;T, SiCepat) beserta ongkos kirim dan estimasi hari sampai secara akurat.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BANNER -->
+  <section class="py-20 md:py-24 max-w-7xl mx-auto px-6">
+    <div class="rounded-3xl bg-gradient-to-r from-light-primary to-[#184a3b] text-light-on-primary p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+      <div class="max-w-2xl mx-auto space-y-6 relative z-10">
+        <span class="px-4 py-1.5 rounded-full bg-accent/20 text-accent font-label text-label-sm font-bold border border-accent/40 inline-block">
+          Mulai Bangun Kerajaan Tokomu Sendiri
+        </span>
+        <h2 class="font-display text-display-lg-mobile md:text-headline-xl text-white">
+          Tingkatkan Margin Profit Bisnismu dengan Toko Online Mandiri
+        </h2>
+        <p class="font-body text-body-lg text-light-on-primary/80">
+          Saatnya bebas dari perang harga dan potongan komisi. Dapatkan website toko online QRIS siap jualan dalam 24 jam bersama Fajar Creative.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <a href="#katalog-ecommerce" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-on-accent font-label text-label-lg font-bold shadow-lg hover:brightness-105 active:scale-95 transition-all">
+            <span class="material-symbols-outlined text-[22px]">shopping_cart</span>
+            <span>Pilih Template Toko Online</span>
+          </a>
+          <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20konsultasi%20pembuatan%20website%20toko%20online%20QRIS" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white font-label text-label-lg font-semibold hover:bg-white/20 transition-all">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            <span>Konsultasi WhatsApp Admin</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-light-surface-container border-t border-light-outline-variant/40 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-light-outline-variant/30">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center font-display font-bold text-lg">
+              FC
+            </div>
+            <span class="font-display font-bold text-xl tracking-tight text-light-primary">FAJAR CREATIVE</span>
+          </div>
+          <p class="font-body text-body-sm text-light-outline max-w-sm">
+            Katalog dan solusi pembuatan website toko online mandiri (e-commerce), payment gateway QRIS otomatis, dan integrasi logistik kurir nasional untuk pebisnis di seluruh Indonesia.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-light-primary">
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[18px]">mail</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Katalog E-Commerce</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li><a href="#katalog-ecommerce" class="hover:text-light-primary transition-colors">Fashion &amp; Butik Baju</a></li>
+            <li><a href="#katalog-ecommerce" class="hover:text-light-primary transition-colors">Skincare &amp; Kosmetik</a></li>
+            <li><a href="#katalog-ecommerce" class="hover:text-light-primary transition-colors">Elektronik &amp; Aksesoris HP</a></li>
+            <li><a href="#katalog-ecommerce" class="hover:text-light-primary transition-colors">Makanan Kemasan &amp; Kopi</a></li>
+            <li><a href="#katalog-ecommerce" class="hover:text-light-primary transition-colors">Herbal &amp; Suplemen</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Fitur Unggulan</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li><a href="#fitur-qris" class="hover:text-light-primary transition-colors">Integrasi QRIS Dinamis</a></li>
+            <li><a href="#fitur-qris" class="hover:text-light-primary transition-colors">Kalkulator Ongkir JNE/J&amp;T</a></li>
+            <li><a href="#fitur-qris" class="hover:text-light-primary transition-colors">Notifikasi WhatsApp Pesanan</a></li>
+            <li><a href="#fitur-qris" class="hover:text-light-primary transition-colors">Kupon Promo &amp; Diskon</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Kontak Bantuan</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-success">chat</span>
+              <span>0823-3890-3403</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-light-outline">mail</span>
+              <span>shop@fajarcreative.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-light-outline">schedule</span>
+              <span>Senin - Sabtu (08.00 - 21.00 WIB)</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-body-sm text-light-outline gap-4">
+        <p>© 2026 Fajar Creative E-Commerce. Seluruh hak cipta dilindungi.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-light-primary transition-colors">Syarat &amp; Ketentuan</a>
+          <a href="#" class="hover:text-light-primary transition-colors">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>

@@ -1,0 +1,889 @@
+<!DOCTYPE html><html lang="id" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Website Jasa &amp; Servis — Fajar Creative | Solusi Digital Bisnis Servis &amp; Tukang Panggilan</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#C59B27',
+        'on-accent': '#383838',
+        'accent-container': '#FDF4DE',
+        'on-accent-container': '#574100',
+        'success': '#1F7A4D',
+        'on-success': '#FFFFFF',
+        'light-primary': '#143D30',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#D1EADB',
+        'light-on-primary-container': '#042118',
+        'light-surface': '#FDFCF7',
+        'light-on-surface': '#1C1F1E',
+        'light-surface-container-low': '#F7F5EE',
+        'light-surface-container': '#EFECE2',
+        'light-surface-container-high': '#E7E4D8',
+        'light-outline': '#737A75',
+        'light-outline-variant': '#C2C8C3',
+        'dark-primary': '#94D5BE',
+        'dark-on-primary': '#003829',
+        'dark-primary-container': '#0E513F',
+        'dark-on-primary-container': '#B0F2DA',
+        'dark-surface': '#111413',
+        'dark-on-surface': '#E1E3DF',
+        'dark-surface-container-low': '#191C1B',
+        'dark-surface-container': '#1F2321',
+        'dark-surface-container-high': '#292E2B',
+        'dark-outline': '#8D938E',
+        'dark-outline-variant': '#424844',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-gap': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Cinzel"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'body': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'label': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '60px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-xl': ['40px', { lineHeight: '48px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-xl-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.3px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '300ms',
+        'filter-switch': '200ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'filter-switch': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        'surface-enter': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'filter-switch': 'ease-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased min-h-[1024px] selection:bg-accent-container selection:text-on-accent-container" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- TOP EMERGENCY & PROMO BANNER -->
+  <div class="bg-light-primary text-light-on-primary py-2.5 px-4 text-center text-label-sm font-label flex items-center justify-between gap-4 border-b border-light-primary-container/20 flex-wrap">
+    <div class="flex items-center gap-2 mx-auto sm:mx-0">
+      <a href="../katalog.html" class="inline-flex items-center gap-1 bg-white/10 hover:bg-white/20 text-white px-3 py-0.5 rounded-full font-bold transition-all">
+        <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+        <span>Kembali ke Semua Katalog</span>
+      </a>
+      <span class="hidden md:inline text-white/50">|</span>
+      <span class="hidden md:inline">Katalog Resmi Fajar Creative 2026</span>
+    </div>
+    <div class="flex items-center gap-3 mx-auto sm:mx-0">
+      <a href="../index.html" class="hover:text-accent transition-colors">Beranda</a>
+      <a href="../paket-harga.html" class="hover:text-accent transition-colors">Paket &amp; Harga</a>
+      <a href="../artikel.html" class="hover:text-accent transition-colors">Artikel</a>
+      <a href="../tentang-founder.html" class="hover:text-accent transition-colors">Founder</a>
+    </div>
+  </div>
+  <div class="hidden">
+    <span class="material-symbols-outlined text-[16px] text-accent">construction</span>
+    <span>Spesialis Website Jasa &amp; Servis 2026: Booking Jadwal Otomatis via WhatsApp + Form Estimasi Biaya &amp; Integrasi Google Maps!</span>
+    <a href="#katalog-jasa" class="underline underline-offset-2 ml-1.5 font-bold hover:text-accent transition-colors">Lihat Desain Template</a>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-light-surface/95 backdrop-blur-md border-b border-light-outline-variant/40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- BRAND LOGO -->
+      <a href="../katalog.html" class="flex items-center gap-3 group">
+        <img alt="fajarcreative Logo" class="h-9 w-9 rounded-full object-contain shrink-0 shadow-sm border border-slate-200 transition-transform group-hover:scale-105" src="../images/logo.png"/>
+        <div class="flex flex-col">
+          <span class="font-bold text-xl tracking-tight text-light-primary leading-tight">fajarcreative</span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-light-outline">Katalog Website Bisnis Jasa & Servis</span>
+        </div>
+      </a>
+
+      <!-- NAV LINKS -->
+      <nav class="hidden lg:flex items-center gap-7">
+        <a href="#katalog-jasa" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Katalog Template Jasa</a>
+        <a href="#kategori-servis" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Kategori Layanan</a>
+        <a href="#fitur-booking" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Fitur Booking &amp; Estimasi</a>
+        <a href="#harga-paket" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Paket &amp; Harga</a>
+        <a href="#faq" class="text-label-lg font-label text-light-on-surface hover:text-light-primary transition-colors">Tanya Jawab</a>
+      </nav>
+
+      <!-- HEADER ACTIONS -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20konsultasi%20website%20untuk%20usaha%20jasa%20dan%20servis%20saya" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-light-outline-variant text-light-primary font-label text-label-md hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[18px] text-success">chat</span>
+          <span>Konsultasi Cepat</span>
+        </a>
+        <a href="#katalog-jasa" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md hover:opacity-95 shadow-sm active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          <span>Pilih Template</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH COMPREHENSIVE SERVICE MOCKUP -->
+  <section class="relative overflow-hidden pt-12 pb-20 md:pt-16 md:pb-28 border-b border-light-outline-variant/30 bg-gradient-to-b from-light-surface via-light-surface-container-low/50 to-light-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- HERO COPYWRITING -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-sm font-semibold w-fit">
+            <span class="material-symbols-outlined text-[16px] text-light-primary">verified_user</span>
+            <span>Solusi Website Tepercaya untuk Pengusaha Servis &amp; Tukang Panggilan</span>
+          </div>
+
+          <h1 class="font-display text-display-lg-mobile md:text-display-lg text-light-primary tracking-tight leading-tight">
+            Katalog Website Jasa &amp; Servis: Dapatkan Order Panggilan Non-Stop
+          </h1>
+
+          <p class="font-body text-body-lg text-light-outline text-pretty">
+            Bikin bisnis jasa dan servis kamu tampak resmi, kredibel, dan mudah dihubungi saat pelanggan membutuhkan pertolongan mendesak. Tersedia template khusus <strong>Servis AC &amp; HVAC, Cleaning Service &amp; Hydro Vacuum, Bengkel &amp; Auto Detailing, hingga Tukang Bangunan &amp; Listrik</strong>.
+          </p>
+
+          <!-- VALUE PILLS -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="flex items-center gap-2 text-body-sm text-light-on-surface">
+              <span class="material-symbols-outlined text-success text-[18px]">check_circle</span>
+              <span>Booking WhatsApp 1-Klik</span>
+            </div>
+            <div class="flex items-center gap-2 text-body-sm text-light-on-surface">
+              <span class="material-symbols-outlined text-success text-[18px]">check_circle</span>
+              <span>Kalkulator Estimasi Biaya</span>
+            </div>
+            <div class="flex items-center gap-2 text-body-sm text-light-on-surface">
+              <span class="material-symbols-outlined text-success text-[18px]">check_circle</span>
+              <span>Radius Area Layanan Maps</span>
+            </div>
+          </div>
+
+          <!-- CTAS -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#katalog-jasa" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all">
+              <span class="material-symbols-outlined text-[20px]">handyman</span>
+              <span>Jelajahi Template Jasa</span>
+            </a>
+            <a href="#fitur-booking" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-light-outline-variant bg-light-surface text-light-primary font-label text-label-lg hover:bg-light-surface-container transition-all">
+              <span class="material-symbols-outlined text-[20px] text-accent">calculate</span>
+              <span>Cek Simulasi Booking</span>
+            </a>
+          </div>
+
+          <!-- TRUST BADGE -->
+          <div class="pt-6 border-t border-light-outline-variant/40 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-accent-container text-on-accent-container flex items-center justify-center font-bold text-sm">
+              4.9
+            </div>
+            <div>
+              <p class="font-headline font-bold text-sm text-light-primary">450+ Vendor Jasa &amp; Servis Sudah Go-Digital</p>
+              <p class="text-body-sm text-light-outline">Rata-rata kenaikan booking masuk hingga 250% dalam 30 hari pertama.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO SHOWCASE GRAPHIC -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-light-surface-container bg-light-surface-container">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrCjg2B480GncrqcFrBiU3_FXIhM4gukyc0XzmwCryKK6bjbhqOVm_MEhxm5axahgK9YJaMdlj3hi9xlMG83P8kdAKOU8WDuatjlKhypygSAPjBzpOFIzeBDAp1gYtjknHWgRx-MPOKCQAR0woe6HIEvTXe9iP8Q-vEDamnF_SAfTssJ7VH5xvPVOEmiuQrsz8RJ2pOXWwca0sYdEV6BoUW96ZclQ2By-JaycyBdu72I27H4CsgBKpZR646tIXYC" alt="Showcase Website Jasa dan Servis Fajar Creative" class="w-full h-auto object-cover hover:scale-102 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 right-4 bg-light-surface/90 backdrop-blur-md p-4 rounded-2xl border border-light-outline-variant/40 shadow-lg flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-label font-bold uppercase tracking-wider text-accent">Template Responsif 2026</span>
+                <p class="font-headline font-bold text-sm text-light-primary">Fitur Panggilan Darurat &amp; Form Pesan Teknisi Terintegrasi</p>
+              </div>
+              <a href="#katalog-jasa" class="px-3.5 py-1.5 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity whitespace-nowrap">
+                Lihat Koleksi
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="bg-light-surface-container-low py-8 border-b border-light-outline-variant/40">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-light-primary">40+</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Katalog Template Sektor Servis</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-light-primary">1 Hari</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Proses Setup Jadi Siap Pakai</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-light-primary">100%</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Order Masuk Langsung ke WA Kamu</p>
+      </div>
+      <div class="p-3">
+        <p class="font-display font-bold text-3xl text-accent">Gratis</p>
+        <p class="text-body-sm text-light-outline mt-1 font-label">Domain, Hosting &amp; Keamanan SSL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG TEMPLATE JASA & SERVIS -->
+  <section id="katalog-jasa" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Koleksi Desain Khusus Jasa</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Katalog Template Website Jasa &amp; Servis Terlengkap
+      </h2>
+      <p class="font-body text-body-md text-light-outline mt-3">
+        Semua desain disusun berdasarkan kebutuhan operasional bisnis jasa: daftar tarif layanan transparan, area jangkauan radius servis, profil teknisi, dan review pelanggan tepercaya.
+      </p>
+
+      <!-- FILTER TABS -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-2">
+        <button class="px-5 py-2.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md shadow-sm">
+          Semua Bidang Jasa (42)
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Teknik &amp; Servis AC
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Cleaning &amp; Hydro Vacuum
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Bengkel &amp; Auto Detailing
+        </button>
+        <button class="px-5 py-2.5 rounded-full bg-light-surface-container text-light-on-surface hover:text-light-primary hover:bg-light-surface-container-high transition-colors font-label text-label-md">
+          Tukang &amp; Renovasi Rumah
+        </button>
+      </div>
+    </div>
+
+    <!-- CATALOG ITEMS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- ITEM 1: SERVIS AC & HVAC -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAK2tcUHyIsx6MN1LjUO82tF_Ul13rahXtmW_Imo1pSrpjir2IiaK4WXf82vjoNvuIuPU6Xc8mRdxpxEpWb5MrcpsuthkThDDbgsomXqRQl8cHh1e0PM2PsVoaN3Sl9t9njI5Nj7N3Wqlaak-r6dV-BVJsl4lES06eJp-PC--bScfgoyTRuzbwbueWaNdgORH9QO6dNxOMo_FP-dee1GqythqkLtcqG7B-ezlwV_qr-A1eCRusissc7F6-FeelmkA" alt="Template Servis AC &amp; HVAC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Teknik &amp; AC</span>
+          <span class="absolute top-3 right-3 bg-accent text-on-accent px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Paling Laris</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-AC01</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (320+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">CoolMaster AC Care</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Dilengkapi pilihan cuci AC, tambah freon, perbaikan bocor, tombol darurat respon 30 menit, dan tarif per unit PK transparan.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Panggilan Darurat</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Tarif per PK</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 399.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 249.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20CoolMaster%20AC%20Care%20FC-AC01" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 2: CLEANING SERVICE & HYDRO VACUUM -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDRXt5sRXtar40ayzZtuJLr-rnR6IrtIHE3z8pBGrSWFMvUY_LLYXPfAlrnqGdnnFdmBixmzn1dL9Uug0Qgah5WqbDNsme4CldQB9M1TnZINrqbcsKYTs0wP6kTzWJ2k4vfYYfrBIVVj0s8_N-NYN3nIcyQdTcQNjG4nt-R1XGYebSgRmYYt__zK-bjY8JMrEB8SaoI7x7jVxUYziOy0NIT9NTSDoUgQtRPc1gr0DBLQHZYWO7KkpimRAisxMVD" alt="Template Deep Cleaning &amp; Sofa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Home Cleaning</span>
+          <span class="absolute top-3 right-3 bg-light-primary text-light-on-primary px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Trending</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-CLN03</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (280+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">GlowClean Hydro Living</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Untuk jasa cuci kasur, sofa, karpet, pembersihan tuntas pasca-renovasi, serta paket langganan mingguan &amp; bulanan rumah/kantor.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Pilihan Per Ruang</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Paket Langganan</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 420.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 269.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20GlowClean%20FC-CLN03" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 3: AUTO DETAILING & BENGKEL -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAUpBEg4dVCafk-wv_C3k_iFFROtSJC0CC8n1d5dFHbgYi_ojX93Eh9lfRSB5wPKzHOcp5vb_u8BJiynNq52uZx8D8KY9_B2jebwFLa6IpyETyNmWDNw8SHxJQ8LBzZlOL_zY8wpShyVdXCXU9r1MviUM-7mZ2vTEFYYmPGwxvu0pzChCLYLbtMMMSEWxuMtBROty-pRkCpDfl-zb7xcOe9ACB4wGln6cwqksNJ-zKULsjuyVoctq4YwEIRN5m18Q" alt="Template Auto Detailing &amp; Salon Mobil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Otomotif</span>
+          <span class="absolute top-3 right-3 bg-accent-container text-on-accent-container px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Eksklusif</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-AUT02</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.8 (190+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">Apex Garage &amp; Detailing</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Desain mewah gelap untuk salon mobil, nano ceramic coating, ganti oli panggilan ke rumah, dan galeri before-after kinclong.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Before &amp; After</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Home Service</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 450.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 279.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20Apex%20Garage%20FC-AUT02" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 4: TUKANG, PLUMBING & RENOVASI -->
+      <article class="group rounded-2xl overflow-hidden bg-light-surface border border-light-outline-variant/50 hover:border-accent transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden aspect-[4/3] bg-light-surface-container">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDGsRC04__eQAaHGSfcZBReQCWjmEMcUW7XWBetJW2MGHK5VPMKcDdhjY6YPA4UufOW6i1PECNT-Fn-EbcntN_Gudr3zVBN8osrOPJz0KEiGFYBsD4a3noKqxEl7acoyUgX7xJpy3r2XTLogD7Dw4toqZqhQZDSVkSC-euw5iS8syfHU4whnrsTFNShckqrAI4ctPGzLRGvMQIM7hz_hbfrPD6g2rLXhLKyf8qLrFypqZNFtHagPqWmFxfBYTdek2AT_7s" alt="Template Handyman &amp; Tukang Pipa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-light-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm font-label text-light-primary border border-light-outline-variant/30">Tukang &amp; Renovasi</span>
+          <span class="absolute top-3 right-3 bg-light-primary-container text-light-on-primary-container px-2.5 py-0.5 rounded-full text-[11px] font-label font-bold">Populer</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-light-outline mb-1">
+              <span>Model: FC-FIX04</span>
+              <span class="text-accent flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 1;">star</span> 4.9 (210+)
+              </span>
+            </div>
+            <h3 class="font-headline text-headline-md text-light-primary group-hover:text-accent transition-colors">TukangPro Home Handyman</h3>
+            <p class="font-body text-body-sm text-light-outline mt-1.5">Untuk jasa perbaikan pipa mampet, kelistrikan darurat, atap bocor, pengecatan dinding, dan survei estimasi biaya gratis.</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Survei Lokasi</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-light-surface-container text-light-outline">Garansi Kerja</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-light-outline-variant/30 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-light-outline line-through block">Rp 390.000</span>
+              <span class="font-label text-label-lg font-bold text-light-primary">Rp 239.000</span>
+            </div>
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20tertarik%20dengan%20Template%20TukangPro%20FC-FIX04" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-light-primary text-light-on-primary text-label-sm font-label hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined text-[15px]">visibility</span>
+              <span>Pakai Template</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- KATEGORI BIDANG SERVIS & JASA DI INDONESIA -->
+  <section id="kategori-servis" class="py-20 bg-light-surface-container-low border-y border-light-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Cakupan Luas</span>
+        <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+          Cocok untuk Segala Bidang Jasa Panggilan &amp; Kantor
+        </h2>
+        <p class="font-body text-body-md text-light-outline mt-3">
+          Apapun spesialisasi jasamu, website Fajar Creative siap disesuaikan dalam waktu kurang dari 24 jam.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+        <div class="p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all shadow-xs">
+          <span class="material-symbols-outlined text-[32px] text-light-primary mb-2">ac_unit</span>
+          <h4 class="font-headline font-bold text-sm text-light-primary">Servis AC</h4>
+          <p class="text-[11px] text-light-outline mt-1">Cuci, Freon &amp; Bongkar Pasang</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all shadow-xs">
+          <span class="material-symbols-outlined text-[32px] text-light-primary mb-2">cleaning_services</span>
+          <h4 class="font-headline font-bold text-sm text-light-primary">Deep Cleaning</h4>
+          <p class="text-[11px] text-light-outline mt-1">Kasur, Sofa &amp; Kantor</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all shadow-xs">
+          <span class="material-symbols-outlined text-[32px] text-light-primary mb-2">car_repair</span>
+          <h4 class="font-headline font-bold text-sm text-light-primary">Salon &amp; Bengkel</h4>
+          <p class="text-[11px] text-light-outline mt-1">Coating &amp; Servis Mobil</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all shadow-xs">
+          <span class="material-symbols-outlined text-[32px] text-light-primary mb-2">plumbing</span>
+          <h4 class="font-headline font-bold text-sm text-light-primary">Pipa &amp; Saluran</h4>
+          <p class="text-[11px] text-light-outline mt-1">Deteksi Kebocoran Pipa</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all shadow-xs">
+          <span class="material-symbols-outlined text-[32px] text-light-primary mb-2">bolt</span>
+          <h4 class="font-headline font-bold text-sm text-light-primary">Listrik &amp; Genset</h4>
+          <p class="text-[11px] text-light-outline mt-1">Instalasi &amp; Perbaikan 24 Jam</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 hover:border-accent transition-all shadow-xs">
+          <span class="material-symbols-outlined text-[32px] text-light-primary mb-2">pest_control</span>
+          <h4 class="font-headline font-bold text-sm text-light-primary">Pest Control</h4>
+          <p class="text-[11px] text-light-outline mt-1">Basmi Rayap &amp; Serangga</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE BOOKING & ESTIMASI SIMULATOR -->
+  <section id="fitur-booking" class="py-20 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="rounded-3xl bg-light-primary text-light-on-primary p-8 md:p-14 overflow-hidden relative shadow-2xl">
+      <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- COPYWRITING -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="px-3.5 py-1.5 rounded-full bg-accent/20 text-accent font-label text-label-sm font-semibold border border-accent/40 inline-flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">touch_app</span>
+            <span>Fitur Unggulan Website Jasa</span>
+          </span>
+          <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-white">
+            Pelanggan Tinggal Pilih Layanan, Jam Booking Langsung Masuk ke WhatsApp
+          </h2>
+          <p class="font-body text-body-md text-light-on-primary/80 text-pretty">
+            Hilangkan kebingungan pelanggan dengan daftar harga transparan. Tamu bisa memilih jenis keluhan, alamat rumah, tanggal kedatangan teknisi, dan pesan otomatis terkirim tanpa kamu perlu rekap manual.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent text-[20px] mt-0.5">check_circle</span>
+              <p class="text-body-sm text-light-on-primary/90"><strong>Format Chat WhatsApp Rapi:</strong> Nama, alamat, nomor unit, dan jadwal kerja teknisi langsung tersusun terstruktur.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent text-[20px] mt-0.5">check_circle</span>
+              <p class="text-body-sm text-light-on-primary/90"><strong>Kalkulator Transparan:</strong> Pelanggan merasa aman karena tahu estimasi biaya sebelum teknisi berangkat.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent text-[20px] mt-0.5">check_circle</span>
+              <p class="text-body-sm text-light-on-primary/90"><strong>Lencana Garansi Layanan:</strong> Tingkatkan rasio closing dengan menyematkan garansi servis 14-30 hari.</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20bikin%20website%20jasa%20dengan%20sistem%20booking%20WhatsApp" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-accent text-on-accent font-label text-label-lg font-bold hover:brightness-105 shadow-md transition-all">
+              <span class="material-symbols-outlined text-[20px]">smart_toy</span>
+              <span>Buat Website Sistem Booking Ini</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- SIMULATOR WIDGET BOOKING -->
+        <div class="lg:col-span-6 bg-light-surface text-light-on-surface rounded-2xl p-6 md:p-8 shadow-xl border border-light-outline-variant/30">
+          <div class="flex items-center justify-between pb-4 border-b border-light-outline-variant/30 mb-6">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-400"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+              <span class="w-3 h-3 rounded-full bg-green-400"></span>
+              <span class="text-xs font-mono text-light-outline ml-2">fajarcreative.com/demo/coolmaster</span>
+            </div>
+            <span class="text-[11px] font-label text-success font-semibold flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-success animate-ping"></span> Simulator Aktif
+            </span>
+          </div>
+
+          <!-- FORM INTERAKTIF PREVIEW -->
+          <div class="space-y-4">
+            <div>
+              <label class="block text-xs font-label font-bold text-light-primary mb-1">1. Pilih Jenis Layanan Servis:</label>
+              <select class="w-full px-3.5 py-2.5 rounded-xl border border-light-outline-variant bg-light-surface-container-low text-xs font-medium text-light-on-surface" disabled>
+                <option selected>Cuci AC Rutin + Pengecekan Freon (Rp 85.000 / Unit)</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-label font-bold text-light-primary mb-1">2. Jumlah Unit / Ruang:</label>
+                <input type="text" value="2 Unit (AC Kamar &amp; Ruang Tamu)" class="w-full px-3.5 py-2 rounded-xl border border-light-outline-variant bg-light-surface-container-low text-xs" readonly>
+              </div>
+              <div>
+                <label class="block text-xs font-label font-bold text-light-primary mb-1">3. Waktu Kedatangan:</label>
+                <input type="text" value="Besok Pagi (10.00 WIB)" class="w-full px-3.5 py-2 rounded-xl border border-light-outline-variant bg-light-surface-container-low text-xs" readonly>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-label font-bold text-light-primary mb-1">4. Alamat Lengkap &amp; Kota:</label>
+              <input type="text" value="Jl. Melati Indah No. 14, Sukajadi, Bandung" class="w-full px-3.5 py-2 rounded-xl border border-light-outline-variant bg-light-surface-container-low text-xs" readonly>
+            </div>
+
+            <!-- HASIL ESTIMASI -->
+            <div class="p-3.5 rounded-xl bg-accent-container/50 border border-accent/30 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-light-outline uppercase font-label">Estimasi Biaya Bersih:</span>
+                <p class="font-display font-bold text-lg text-light-primary">Rp 170.000</p>
+                <span class="text-[10px] text-success font-semibold">✓ Garansi servis 14 hari kerja</span>
+              </div>
+              <button class="px-4 py-2 rounded-full bg-success text-on-success text-xs font-label font-bold flex items-center gap-1.5 shadow-sm hover:opacity-90">
+                <span class="material-symbols-outlined text-[16px]">chat</span>
+                <span>Pesan Teknisi via WA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET & HARGA LENGKAP -->
+  <section id="harga-paket" class="py-20 md:py-28 bg-light-surface-container-low border-b border-light-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Investasi Bisnis Transparan</span>
+        <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+          Paket Pembuatan Website Jasa &amp; Servis Siap Pakai
+        </h2>
+        <p class="font-body text-body-md text-light-outline mt-3">
+          Biaya terjangkau dengan hasil profesional standar perusahaan besar. Tidak ada potongan komisi per pemanggilan teknisi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- PAKET 1: TEKNISI MANDIRI / PERORANGAN -->
+        <div class="rounded-3xl p-8 bg-light-surface border border-light-outline-variant/40 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all">
+          <div>
+            <span class="text-label-sm font-label font-semibold text-light-outline uppercase tracking-wider">Perorangan &amp; Tukang</span>
+            <h3 class="font-headline text-headline-lg text-light-primary mt-1">Teknisi Solo</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">Pilihan tepat untuk teknisi mandiri yang ingin punya kartu nama digital &amp; dipercaya warga.</p>
+            <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+              <span class="text-body-sm text-light-outline line-through">Rp 399.000</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-display font-bold text-4xl text-light-primary">Rp 219.000</span>
+                <span class="text-body-sm text-light-outline">/ tahun</span>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>1 Halaman Landing Page Jasa Lengkap</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Daftar hingga 8 Jenis Layanan &amp; Tarif</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Tombol Telepon &amp; WhatsApp 1-Klik</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Alamat Peta Google Maps</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Subdomain: <em>namausaha.fajarcreative.com</em></span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20ambil%20Paket%20Teknisi%20Solo" target="_blank" rel="noopener" class="w-full py-3 rounded-full border border-light-primary text-light-primary font-label text-label-md font-semibold flex items-center justify-center hover:bg-light-primary hover:text-light-on-primary transition-colors">
+              Pilih Paket Solo
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKET 2: BENGKEL & VENDOR SERVIS (PALING LARIS) -->
+        <div class="rounded-3xl p-8 bg-light-surface border-2 border-accent relative flex flex-col justify-between shadow-xl">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-accent text-on-accent px-4 py-1 rounded-full text-label-sm font-label font-bold tracking-wide uppercase shadow-sm">
+            Rekomendasi Terlaris
+          </div>
+          <div>
+            <span class="text-label-sm font-label font-semibold text-accent uppercase tracking-wider">Perusahaan &amp; Tim Servis</span>
+            <h3 class="font-headline text-headline-lg text-light-primary mt-1">Vendor Pro Jasa</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">Untuk CV servis AC, agensi cleaning, salon mobil, atau kontraktor tukang dengan tim.</p>
+            <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+              <span class="text-body-sm text-light-outline line-through">Rp 799.000</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-display font-bold text-4xl text-light-primary">Rp 489.000</span>
+                <span class="text-body-sm text-light-outline">/ tahun</span>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span class="font-semibold">Gratis Domain Kustom (.com / .id) 1 Tahun</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Kalkulator Estimasi Biaya Interaktif</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Sistem Booking Jadwal Jam &amp; Alamat WA</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Galeri Before &amp; After Pekerjaan</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Multi-Admin WhatsApp CS (Rotator Sales)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Setup SEO Google Lokal Kota Kamu</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20ambil%20Paket%20Vendor%20Pro%20Jasa" target="_blank" rel="noopener" class="w-full py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-lg font-bold flex items-center justify-center gap-2 hover:opacity-95 shadow-md active:scale-95 transition-all">
+              <span>Ambil Paket Vendor Pro</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKET 3: DIREKTORI MULTI-TEKNISI -->
+        <div class="rounded-3xl p-8 bg-light-surface border border-light-outline-variant/40 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all">
+          <div>
+            <span class="text-label-sm font-label font-semibold text-light-primary uppercase tracking-wider">Platform &amp; Agensi</span>
+            <h3 class="font-headline text-headline-lg text-light-primary mt-1">Portal Agensi Mitra</h3>
+            <p class="font-body text-body-sm text-light-outline mt-2">Untuk pemilik agensi yang menaungi puluhan teknisi dan cabang layanan di beberapa kota.</p>
+            <div class="mt-6 pb-6 border-b border-light-outline-variant/40">
+              <span class="text-body-sm text-light-outline">Paket Agensi Multi-Cabang</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-display font-bold text-4xl text-light-primary">Rp 1.250.000</span>
+                <span class="text-body-sm text-light-outline">/ portal</span>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 font-body text-body-sm text-light-on-surface">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Showcase Cabang Kota / Wilayah Layanan</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Profil Puluhan Teknisi Terverifikasi</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Review Rating Bintang Pelanggan Otentik</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-success text-[18px]">check</span>
+                <span>Prioritas Konsultasi &amp; Maintenance 1 Tahun</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-light-outline-variant/30">
+            <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20konsultasi%20Portal%20Agensi%20Mitra%20Jasa" target="_blank" rel="noopener" class="w-full py-3 rounded-full bg-accent text-on-accent font-label text-label-md font-bold flex items-center justify-center hover:brightness-105 transition-all shadow-sm">
+              Konsultasi Agensi Jasa
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-20 max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-label-sm font-label uppercase tracking-widest text-accent font-bold">Tanya Jawab</span>
+      <h2 class="font-display text-headline-xl-mobile md:text-headline-xl text-light-primary mt-2">
+        Pertanyaan Seputar Website Jasa &amp; Servis
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+        <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+          <span>Apakah saya bisa menambahkan atau mengubah daftar tarif harga servis?</span>
+          <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+          Sangat bisa! Kamu bisa meminta tim Fajar Creative untuk mengupdate foto pekerjaan dan daftar harga kapan saja secara berkala tanpa biaya tambahan.
+        </p>
+      </details>
+
+      <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+        <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+          <span>Apakah website ini bisa langsung tampil di pencarian Google saat orang butuh servis AC atau tukang?</span>
+          <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+          Ya, semua template kami dibangun dengan struktur kode SEO ramah mesin pencari dan dioptimasi kata kunci lokal seperti &#34;Servis AC Jakarta Selatan&#34;, &#34;Cuci Kasur Surabaya&#34;, atau &#34;Tukang Pipa Bandung&#34;.
+        </p>
+      </details>
+
+      <details class="group p-5 rounded-2xl bg-light-surface border border-light-outline-variant/40 transition-all">
+        <summary class="font-headline text-headline-md text-light-primary cursor-pointer flex items-center justify-between list-none">
+          <span>Apakah nomor WhatsApp bisa diarahkan ke lebih dari satu nomor teknisi?</span>
+          <span class="material-symbols-outlined text-light-outline group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="font-body text-body-sm text-light-outline mt-3 pt-3 border-t border-light-outline-variant/30 leading-relaxed">
+          Bisa! Di paket Vendor Pro dan Portal Agensi, kami menyediakan fitur tombol rotator multi-admin sehingga panggilan booking dari pelanggan bisa dibagi rata ke tim customer service atau teknisi lapangan.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BANNER -->
+  <section class="py-20 md:py-24 max-w-7xl mx-auto px-6">
+    <div class="rounded-3xl bg-gradient-to-r from-light-primary to-[#184a3b] text-light-on-primary p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+      <div class="max-w-2xl mx-auto space-y-6 relative z-10">
+        <span class="px-4 py-1.5 rounded-full bg-accent/20 text-accent font-label text-label-sm font-bold border border-accent/40 inline-block">
+          Solusi Order Servis Tiap Hari
+        </span>
+        <h2 class="font-display text-display-lg-mobile md:text-headline-xl text-white">
+          Jadikan Bisnis Jasa &amp; Servismu Pilihan Utama Pelanggan
+        </h2>
+        <p class="font-body text-body-lg text-light-on-primary/80">
+          Tinggalkan cara lama yang sepi order. Dapatkan website jasa siap pakai dalam 24 jam bersama tim Fajar Creative.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <a href="#katalog-jasa" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-on-accent font-label text-label-lg font-bold shadow-lg hover:brightness-105 active:scale-95 transition-all">
+            <span class="material-symbols-outlined text-[22px]">engineering</span>
+            <span>Pilih Template Sekarang</span>
+          </a>
+          <a href="https://wa.me/6282338903403?text=Halo%20Fajar%20Creative,%20saya%20mau%20konsultasi%20website%20jasa%20dan%20servis" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white font-label text-label-lg font-semibold hover:bg-white/20 transition-all">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            <span>WhatsApp Konsultasi Admin</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-light-surface-container border-t border-light-outline-variant/40 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-light-outline-variant/30">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img alt="fajarcreative Logo" class="h-9 w-9 rounded-full object-contain shrink-0 shadow-sm border border-slate-200" src="../images/logo.png"/>
+            <span class="font-bold text-xl tracking-tight text-light-primary">fajarcreative</span>
+          </div>
+          <p class="font-body text-body-sm text-light-outline max-w-sm">
+            Platform pembuatan dan katalog template website khusus bisnis jasa panggilan, servis teknik, pembersihan rumah tangga, dan otomotif di seluruh Indonesia.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-light-primary">
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-light-surface flex items-center justify-center border border-light-outline-variant/40 hover:bg-light-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[18px]">mail</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Katalog Layanan</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li><a href="#katalog-jasa" class="hover:text-light-primary transition-colors">Servis AC &amp; HVAC</a></li>
+            <li><a href="#katalog-jasa" class="hover:text-light-primary transition-colors">Deep Cleaning &amp; Sofa</a></li>
+            <li><a href="#katalog-jasa" class="hover:text-light-primary transition-colors">Bengkel &amp; Detailing</a></li>
+            <li><a href="#katalog-jasa" class="hover:text-light-primary transition-colors">Tukang Pipa &amp; Air</a></li>
+            <li><a href="#katalog-jasa" class="hover:text-light-primary transition-colors">Kelistrikan &amp; Renovasi</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Fitur Bisnis</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li><a href="#fitur-booking" class="hover:text-light-primary transition-colors">Sistem Booking WhatsApp</a></li>
+            <li><a href="#fitur-booking" class="hover:text-light-primary transition-colors">Kalkulator Estimasi Biaya</a></li>
+            <li><a href="#fitur-booking" class="hover:text-light-primary transition-colors">Radius Peta Google Maps</a></li>
+            <li><a href="#harga-paket" class="hover:text-light-primary transition-colors">Free Setup Domain &amp; SSL</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label text-label-md font-bold text-light-primary uppercase tracking-wider">Kontak Bantuan</h4>
+          <ul class="space-y-2 text-body-sm font-body text-light-outline">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-success">chat</span>
+              <span>+62 823-3890-3403</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-light-outline">mail</span>
+              <span>service@fajarcreative.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-light-outline">schedule</span>
+              <span>24/7 Layanan Bantuan</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-body-sm text-light-outline gap-4">
+        <p>© 2026 Fajar Creative Service. Seluruh hak cipta dilindungi.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-light-primary transition-colors">Syarat &amp; Ketentuan</a>
+          <a href="#" class="hover:text-light-primary transition-colors">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>
